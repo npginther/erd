@@ -164,7 +164,7 @@ def generate_mermaid_erd(tables, relationships, schema_filter=None):
     return '\n'.join(mermaid)
 
 def generate_mermaid_flowchart(tables, relationships, schema_filter=None):
-    """Generate Mermaid flowchart with top-down orientation"""
+    """Generate Mermaid flowchart with top-down orientation using subgraphs"""
     
     # Filter by schema if specified
     if schema_filter:
@@ -186,52 +186,69 @@ def generate_mermaid_flowchart(tables, relationships, schema_filter=None):
     print(f"   - {len(filtered_tables)} tables")
     print(f"   - {len(filtered_relationships)} relationships")
     
-    mermaid = ["flowchart TD"]
+    # Build hierarchy - identify parent tables and their children
+    parent_to_children = defaultdict(list)
+    all_children = set()
+    parent_tables = set()
     
-    # Add table definitions as nodes
+    for rel in filtered_relationships:
+        parent_to_children[rel['to_table']].append({
+            'table': rel['from_table'],
+            'column': rel['from_column'],
+            'cascade': rel['delete_rule'] == 'CASCADE'
+        })
+        parent_tables.add(rel['to_table'])
+        all_children.add(rel['from_table'])
+    
+    # Root parents are those that are parents but never children
+    root_parents = parent_tables - all_children
+    
+    mermaid = ["flowchart TD"]
+    mermaid.append("")
+    
+    # Define all table nodes
     for table_full_name, table_info in sorted(filtered_tables.items()):
         schema, table = table_full_name.split('.')
         
-        # Create styled node with primary keys
         if table_info['primary_keys']:
-            pk_list = ', '.join(table_info['primary_keys'])
-            mermaid.append(f"    {table}[\"<b>{table}</b><br/>PK: {pk_list}\"]")
+            pk_list = ', '.join(table_info['primary_keys'][:2])  # Limit to 2 PKs for readability
+            if len(table_info['primary_keys']) > 2:
+                pk_list += '...'
+            mermaid.append(f"    {table}[\"{table}<br/><small>PK: {pk_list}</small>\"]")
         else:
-            mermaid.append(f"    {table}[\"<b>{table}</b>\"]")
+            mermaid.append(f"    {table}[\"{table}\"]")
     
-    # Add styling
     mermaid.append("")
-    mermaid.append("    classDef parentTable fill:#4CAF50,stroke:#2E7D32,color:#fff")
+    mermaid.append("    %% Styling")
+    mermaid.append("    classDef parentTable fill:#4CAF50,stroke:#2E7D32,color:#fff,stroke-width:3px")
     mermaid.append("    classDef childTable fill:#2196F3,stroke:#1565C0,color:#fff")
+    mermaid.append("    classDef mixedTable fill:#FF9800,stroke:#E65100,color:#fff")
     mermaid.append("")
     
-    # Track parent tables
-    parent_tables = set()
-    child_tables = set()
+    # Group relationships by parent for better vertical layout
+    mermaid.append("    %% Relationships grouped by parent table")
+    for parent in sorted(parent_to_children.keys()):
+        children = parent_to_children[parent]
+        mermaid.append(f"    %% {parent} children")
+        for child_info in children:
+            child = child_info['table']
+            col = child_info['column']
+            if child_info['cascade']:
+                mermaid.append(f"    {parent} -->|{col}| {child}")
+            else:
+                mermaid.append(f"    {parent} -.->|{col}| {child}")
     
-    for rel in filtered_relationships:
-        parent_tables.add(rel['to_table'])
-        child_tables.add(rel['from_table'])
+    # Apply styling
+    mermaid.append("")
+    mermaid.append("    %% Apply styles")
+    for table in root_parents:
+        mermaid.append(f"    class {table} parentTable")
     
-    # Add relationships
-    for rel in filtered_relationships:
-        from_table = rel['from_table']
-        to_table = rel['to_table']
-        label = f"{rel['from_column']}"
-        
-        # Determine arrow style based on delete rule
-        if rel['delete_rule'] == 'CASCADE':
-            # Solid arrow for cascade
-            mermaid.append(f"    {to_table} -->|{label}| {from_table}")
+    for table in all_children:
+        if table in parent_tables:  # This table is both parent and child
+            mermaid.append(f"    class {table} mixedTable")
         else:
-            # Dashed arrow for NO ACTION
-            mermaid.append(f"    {to_table} -.->|{label}| {from_table}")
-    
-    # Apply styling to parent tables
-    mermaid.append("")
-    for table in parent_tables:
-        if table not in child_tables:  # Only parents, not children
-            mermaid.append(f"    class {table} parentTable")
+            mermaid.append(f"    class {table} childTable")
     
     return '\n'.join(mermaid)
 
