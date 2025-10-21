@@ -121,12 +121,21 @@ The primary application schema containing:
 
 ## Next Steps
 
-To get a complete ERD with all columns:
-1. Export INFORMATION_SCHEMA.COLUMNS table
-2. Modify the script to include all columns in table definitions
-3. Consider using a dedicated ERD tool like:
-   - DbSchema
-   - DBeaver
-   - SQL Server Management Studio (Database Diagrams)
-   - draw.io with database plugins
+### Expand to Full Data Dictionary
+
+This project is designed to grow into a comprehensive data dictionary! See **`DATA_DICTIONARY_PLAN.md`** for the complete roadmap.
+
+**Quick start:**
+1. Run queries in `export_queries.sql` to export additional schema information
+2. Priority exports: COLUMNS.csv, INDEXES.csv, EXTENDED_PROPERTIES.csv
+3. Generate full table documentation with descriptions, data types, and relationships
+4. Create searchable HTML/Markdown documentation
+
+### Alternative ERD Tools
+
+For more complex visualizations, consider:
+- DbSchema - Professional database design
+- DBeaver - Free with ERD generation
+- SQL Server Management Studio - Built-in Database Diagrams
+- draw.io - Manual but full control
 

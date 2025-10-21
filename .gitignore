@@ -28,3 +28,18 @@ desktop.ini
 *.temp
 *.log
 
+# Data Dictionary exports (optional - depends if you want to version these)
+# Uncomment to exclude large CSV exports:
+# COLUMNS.csv
+# INDEXES.csv
+# TABLE_SIZES.csv
+# EXTENDED_PROPERTIES.csv
+# VIEWS.csv
+# ROUTINES.csv
+# PARAMETERS.csv
+
+# Generated documentation (optional)
+# docs/
+# data_dictionary.html
+# data_dictionary.xlsx
+

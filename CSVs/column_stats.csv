@@ -1,0 +1,1235 @@
+SchemaName,TableName,ColumnName,StatisticName,IsAutoCreated,IsUserCreated,LastUpdated
+AzureSync,AzureSyncTablesForCore,_RowNumber,PK_AzureSyncTablesForCore,false,false,
+AzureSync,AzureSyncTablesForCurriculum,_RowNumber,PK_AzureSyncTablesForCurriculum,false,false,
+AzureSync,PreviousCoreChangeTrackingVersion,Id,PK_PreviousCoreChangeTrackingVersion,false,false,
+AzureSync,PreviousCurriculumChangeTrackingVersion,Id,PK_PreviousCurriculumChangeTrackingVersion,false,false,
+AzureSync,SyncRuns,_RowNumber,PK_SyncRuns,false,false,
+AzureSync,SyncRuns,DataSet,_WA_Sys_00000002_2E9BCA86,true,false,2025-10-04 10:01:52.857
+AzureSync,SyncRuns,SyncStart,_WA_Sys_00000003_2E9BCA86,true,false,2025-06-07 07:00:16.217
+dbo,AccountingSyncBatches,_RowNumber,PK_AccountingSyncBatches,false,false,
+dbo,AccountingSyncBatches,BatchId,IDX_AccountingSyncBatches_OperatorIdBatchId,false,false,
+dbo,AccountingSyncBatches,OperatorId,IDX_AccountingSyncBatches_OperatorIdBatchId,false,false,
+dbo,AccountingSyncBatchTransactions,_RowNumber,PK_AccountingSyncBatchTransactions,false,false,
+dbo,AccountingSyncBatchTransactions,BatchId,IDX_AccountingSyncBatchTransactions_OperatorIdBatchIdTransactionId,false,false,
+dbo,AccountingSyncBatchTransactions,OperatorId,IDX_AccountingSyncBatchTransactions_OperatorIdBatchIdTransactionId,false,false,
+dbo,AccountingSyncBatchTransactions,TransactionId,IDX_AccountingSyncBatchTransactions_OperatorIdBatchIdTransactionId,false,false,
+dbo,AircraftOwners,_RowNumber,PK_AircraftOwners,false,false,
+dbo,AircraftOwners,AircraftId,UK_AircraftOwners,false,false,
+dbo,AircraftOwners,OperatorId,UK_AircraftOwners,false,false,
+dbo,AircraftOwners,OwnerId,UK_AircraftOwners,false,false,
+dbo,AircraftRateTypes,_RowNumber,PK_AircraftRateTypes,false,false,2023-09-15 23:18:53.667
+dbo,AircraftRateTypes,OperatorId,_WA_Sys_00000003_70DDC3D8,true,false,2025-10-18 09:52:25.053
+dbo,AircraftTypeCheckOutsHistory,_RowId,PK_AircraftTypeCheckOutsHistory,false,false,2023-08-31 23:17:52.577
+dbo,AircraftTypeCheckOutsHistory,CompanyId,_WA_Sys_00000005_74AE54BC,true,false,2025-10-21 09:52:13.767
+dbo,AuditHistoryEvents,EventDate,ix_OperatorIdResourceIdEventTypeEventDate,false,false,
+dbo,AuditHistoryEvents,EventId,PK_AuditHistoryEvents,false,false,
+dbo,AuditHistoryEvents,EventType,ix_OperatorIdResourceIdEventTypeEventDate,false,false,
+dbo,AuditHistoryEvents,OperatorId,ix_OperatorIdResourceIdEventTypeEventDate,false,false,
+dbo,AuditHistoryEvents,ResourceId,ix_OperatorIdResourceIdEventTypeEventDate,false,false,
+dbo,Certifications,_RowId,PK_Certifications,false,false,
+dbo,Certifications,CertificationId,UK_Certifications_CertificationId,false,false,
+dbo,Closings,_RowNumber,PK_Closings,false,false,2023-06-02 23:03:59.780
+dbo,Closings,ClosingId,UK_Closings,false,false,
+dbo,Closings,OperatorId,_WA_Sys_00000003_4356F04A,true,false,2025-06-22 09:28:26.003
+dbo,ConsolidatedReservations,ReservationId,PK_ConsolidatedReservations,false,false,
+dbo,ConsolidatedReservations,ResourceId,PK_ConsolidatedReservations,false,false,
+dbo,CourseCertifications,_RowId,PK_CourseCertifications,false,false,2023-08-30 23:00:59.353
+dbo,CourseCertifications,CourseCertificationId,UK_CourseCertifications_CourseCertificationId,false,false,
+dbo,CourseCertifications,CourseId,nci_wi_CourseCertifications_52FF7A99A49BFE4BC592393E9BFB4A69,false,false,
+dbo,CourseCertifications,OperatorId,nci_wi_CourseCertifications_52FF7A99A49BFE4BC592393E9BFB4A69,false,false,
+dbo,CourseCertifications,OperatorId,_WA_Sys_00000004_69B1A35C,true,false,2025-10-21 12:08:35.880
+dbo,CourseCertifications,RegulationId,nci_wi_CourseCertifications_52FF7A99A49BFE4BC592393E9BFB4A69,false,false,
+dbo,CourseCustomDocumentationChecks,_RowId,PK_CourseCustomDocumentationChecks,false,false,2023-09-07 23:01:43.877
+dbo,CourseCustomDocumentationChecks,OperatorId,_WA_Sys_00000003_4E298478,true,false,2025-10-16 12:10:00.410
+dbo,CourseDocumentUploads,_RowNumber,PK_CourseDocumentUploads,false,false,2023-09-06 23:00:38.713
+dbo,CourseDocumentUploads,OperatorId,_WA_Sys_00000004_742F31CF,true,false,2025-10-21 12:08:38.107
+dbo,CourseNames,_RowNumber,PK_CourseNames,false,false,2023-09-15 23:18:40.700
+dbo,CourseNames,CourseId,UK_CourseNames_OperatorId_CourseId,false,false,2025-10-21 09:53:10.070
+dbo,CourseNames,OperatorId,UK_CourseNames_OperatorId_CourseId,false,false,2025-10-21 09:53:10.070
+dbo,CourseProfileDocumentationChecks,_RowId,PK_CourseProfileDocumentationChecks,false,false,2023-08-30 23:01:53.647
+dbo,CourseProfileDocumentationChecks,OperatorId,_WA_Sys_00000003_52EE3995,true,false,2025-10-20 12:11:21.233
+dbo,CourseProfileLessonMinimumTimes,_RowId,PK_CourseProfileLessonMinimumTimes,false,false,2023-08-11 23:01:13.130
+dbo,CourseProfileLessonMinimumTimes,CourseProfileId,nci_wi_CourseProfileLessonMinimumTimes_80202D01F3E3A2D3D680C85166399E4C,false,false,2025-03-12 21:13:06.470
+dbo,CourseProfileLessonMinimumTimes,LessonId,nci_wi_CourseProfileLessonMinimumTimes_80202D01F3E3A2D3D680C85166399E4C,false,false,2025-03-12 21:13:06.470
+dbo,CourseProfileLessonMinimumTimes,OperatorId,nci_wi_CourseProfileLessonMinimumTimes_80202D01F3E3A2D3D680C85166399E4C,false,false,2025-03-12 21:13:06.470
+dbo,CourseProfileLessonMinimumTimes,OperatorId,_WA_Sys_00000002_0AA882D3,true,false,2025-10-21 12:08:55.890
+dbo,CourseProfiles,_RowId,PK_CourseProfiles,false,false,2023-09-14 23:01:49.823
+dbo,CourseProfiles,CourseProfileId,nci_wi_CourseProfiles_679768DD3C431977B5111343BA73A2F5,false,false,2025-03-12 21:13:06.633
+dbo,CourseProfiles,OperatorId,nci_wi_CourseProfiles_679768DD3C431977B5111343BA73A2F5,false,false,2025-03-12 21:13:06.633
+dbo,CourseProfiles,OperatorId,_WA_Sys_00000002_1BD30ED5,true,false,2025-10-18 12:08:39.570
+dbo,Courses,_RowId,PK_Courses,false,false,2025-06-27 14:13:54.380
+dbo,Courses,CourseFamilyId,ix_Courses_CourseFamilyId,false,false,2025-10-21 18:04:02.843
+dbo,Courses,CourseId,UK_Courses_CourseId,false,false,2025-10-21 18:04:02.820
+dbo,Courses,Name,_WA_Sys_00000004_681E60A5,true,false,2025-10-21 18:04:02.880
+dbo,Courses,OperatorId,_WA_Sys_00000003_681E60A5,true,false,2025-03-11 09:11:55.037
+dbo,Courses,OperatorId,nci_wi_Courses_7F7D3A98CDE02C53D9252215A2EBF4F2,false,false,2025-10-21 18:04:02.850
+dbo,Courses,Status,nci_wi_Courses_7F7D3A98CDE02C53D9252215A2EBF4F2,false,false,2025-10-21 18:04:02.850
+dbo,CourseTasks,_RowId,PK_CourseTasks,false,false,2023-08-30 23:00:59.630
+dbo,CourseTasks,CourseId,UK_CourseTasks_CourseId_Name,false,false,2025-03-12 21:03:17.383
+dbo,CourseTasks,CourseId,IDX_CourseTasks_CourseId_OperatorId,false,false,2025-03-12 21:03:20.490
+dbo,CourseTasks,CourseId,nci_wi_CourseTasks_59770F95B69E3137CCFDFE44E9E13B51,false,false,2025-03-12 21:03:23.820
+dbo,CourseTasks,CourseId,nci_wi_CourseTasks_BA04E2824C81C30B0D9E7FBC9EA98383,false,false,2025-10-21 12:08:38.207
+dbo,CourseTasks,CourseTaskId,UK_CourseTasks_CourseTaskId,false,false,
+dbo,CourseTasks,Name,UK_CourseTasks_CourseId_Name,false,false,2025-03-12 21:03:17.383
+dbo,CourseTasks,Name,nci_wi_CourseTasks_59770F95B69E3137CCFDFE44E9E13B51,false,false,2025-03-12 21:03:23.820
+dbo,CourseTasks,OperatorId,nci_wi_CourseTasks_BA04E2824C81C30B0D9E7FBC9EA98383,false,false,2025-10-21 12:08:38.207
+dbo,CourseTasks,OperatorId,IDX_CourseTasks_CourseId_OperatorId,false,false,2025-03-12 21:03:20.490
+dbo,CourseTasks,OperatorId,_WA_Sys_00000004_186C9245,true,false,2025-03-12 09:11:05.287
+dbo,CourseTasks,OperatorId,nci_wi_CourseTasks_59770F95B69E3137CCFDFE44E9E13B51,false,false,2025-03-12 21:03:23.820
+dbo,CourseTimeFields,_RowId,PK_CourseTimeFields,false,false,2023-08-30 23:00:59.733
+dbo,CourseTimeFields,CourseId,nci_wi_CourseTimeFields_2C18CC036ABA746ED7CE949BB5646133,false,false,
+dbo,CourseTimeFields,CourseId,ix_CourseTimeFields_CourseId_OperatorId,false,false,2025-03-12 21:13:06.810
+dbo,CourseTimeFields,CourseId,nci_wi_CourseTimeFields_D6EE5371131DB673C3CECD832608C14E,false,false,2025-03-12 21:13:06.993
+dbo,CourseTimeFields,Enabled,nci_wi_CourseTimeFields_D6EE5371131DB673C3CECD832608C14E,false,false,2025-03-12 21:13:06.993
+dbo,CourseTimeFields,Enabled,nci_wi_CourseTimeFields_2C18CC036ABA746ED7CE949BB5646133,false,false,
+dbo,CourseTimeFields,FieldId,nci_wi_CourseTimeFields_D6EE5371131DB673C3CECD832608C14E,false,false,2025-03-12 21:13:06.993
+dbo,CourseTimeFields,OperatorId,_WA_Sys_00000003_24D2692A,true,false,2025-10-04 12:07:02.053
+dbo,CourseTimeFields,OperatorId,ix_CourseTimeFields_CourseId_OperatorId,false,false,2025-03-12 21:13:06.810
+dbo,CourseTimeFields,OperatorId,nci_wi_CourseTimeFields_D6EE5371131DB673C3CECD832608C14E,false,false,2025-03-12 21:13:06.993
+dbo,CourseTimeFields,OperatorId,nci_wi_CourseTimeFields_2C18CC036ABA746ED7CE949BB5646133,false,false,
+dbo,CourseTrackedTimeFields,_RowId,PK_CourseTrackedTimeFields,false,false,2023-08-30 23:00:59.383
+dbo,CourseTrackedTimeFields,CourseId,nci_wi_CourseTrackedTimeFields_CD2F83D3A36A0E0DDF17D9194C758DF5,false,false,2025-10-21 12:08:41.087
+dbo,CourseTrackedTimeFields,CourseId,nci_wi_CourseTrackedTimeFields_0A9703808436EA29034A0DE90E5C94B2,false,false,2025-03-12 21:13:07.157
+dbo,CourseTrackedTimeFields,Minimum,nci_wi_CourseTrackedTimeFields_CD2F83D3A36A0E0DDF17D9194C758DF5,false,false,2025-10-21 12:08:41.087
+dbo,CourseTrackedTimeFields,OperatorId,nci_wi_CourseTrackedTimeFields_CD2F83D3A36A0E0DDF17D9194C758DF5,false,false,2025-10-21 12:08:41.087
+dbo,CustomCancellationReasons,CompanyId,ix_CustomCancellationReasons_CompanyId_IsDeleted,false,false,2025-10-21 09:51:54.027
+dbo,CustomCancellationReasons,id,PK_CustomCancellationReasons,false,false,2023-07-13 23:03:02.810
+dbo,CustomCancellationReasons,IsDeleted,ix_CustomCancellationReasons_CompanyId_IsDeleted,false,false,2025-10-21 09:51:54.027
+dbo,CustomerAccounts,_RowNumber,PK_CustomerAccounts,false,false,2023-08-30 23:27:38.723
+dbo,CustomerAccounts,AccountTransactionId,UK_CustomerAccounts,false,false,
+dbo,CustomerAccounts,OperatorId,IDX_CustomerAccounts_OperatorIdUserId,false,false,2025-10-21 09:53:21.973
+dbo,CustomerAccounts,UserId,IDX_CustomerAccounts_OperatorIdUserId,false,false,2025-10-21 09:53:21.973
+dbo,CustomLessonTasks,_RowId,PK_CustomLessonTasks,false,false,2023-09-13 23:00:28.363
+dbo,CustomLessonTasks,AddedAt,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomLessonTasks,CourseId,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomLessonTasks,CustomLessonTaskId,UK_CustomLessonTasks_CustomLessonTaskId,false,false,
+dbo,CustomLessonTasks,EnrollmentId,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomLessonTasks,Importance,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomLessonTasks,LessonId,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomLessonTasks,OperatorId,_WA_Sys_00000002_4EC8A2F6,true,false,2025-10-21 12:08:38.320
+dbo,CustomLessonTasks,OperatorId,nci_wi_CustomLessonTasks_4C69E3272F535CB4E43D7FD3762BA9A9,false,false,2025-03-12 21:13:07.320
+dbo,CustomProfileDocumentation,_RowId,PK_CustomProfileDocumentation,false,false,2023-09-13 23:19:33.577
+dbo,CustomProfileDocumentation,CompanyId,_WA_Sys_00000002_3805392F,true,false,2025-10-20 09:46:35.177
+dbo,CustomProfileDocumentation,CustomProfileDocumentationId,UK_CustomProfileDocumentation_CustomProfileDocumentationId,false,false,
+dbo,CustomSquawkResolutions,CompanyId,_WA_Sys_00000003_63E3BB6D,true,false,2025-09-20 09:40:19.493
+dbo,CustomSquawkResolutions,CustomSquawkResolutionId,dbo.IDX_CustomSquawkResolutions_CustomSquawkResolutionId_ResolvesGroundableSquawk,false,false,
+dbo,CustomSquawkResolutions,id,PK_CustomSquawkResolutions,false,false,2023-07-13 23:03:47.060
+dbo,CustomTimeFields,CustomTimeFieldId,PK_CustomTimeFields_CustomTimeFieldId,false,false,
+dbo,CustomTimeFields,FieldId,UK_CustomTimeFields_FieldId,false,false,
+dbo,CustomTimeFields,Name,UK_CustomTimeFields_OperatorId_Name,false,false,2025-10-03 12:06:26.000
+dbo,CustomTimeFields,OperatorId,UK_CustomTimeFields_OperatorId_Name,false,false,2025-10-03 12:06:26.000
+dbo,DiscountGroup,_RowNumber,PK_DiscountGroups,false,false,2023-08-28 23:17:52.240
+dbo,DiscountGroup,OperatorId,_WA_Sys_00000002_741A2336,true,false,2025-10-19 09:46:05.647
+dbo,DiscountGroupPeopleGroupJoiner,DiscountGroupId,PK_DiscountGroupPeopleGroupJoiner,false,false,2023-07-13 23:02:54.017
+dbo,DiscountGroupPeopleGroupJoiner,OperatorId,PK_DiscountGroupPeopleGroupJoiner,false,false,2023-07-13 23:02:54.017
+dbo,DiscountGroupPeopleGroupJoiner,OperatorId,_WA_Sys_00000002_0AFD888E,true,false,2025-10-11 09:47:14.157
+dbo,DiscountGroupPeopleGroupJoiner,PeopleGroupId,_WA_Sys_00000003_0AFD888E,true,false,2023-07-13 23:02:54.033
+dbo,DiscountGroupPeopleGroupJoiner,PeopleGroupId,PK_DiscountGroupPeopleGroupJoiner,false,false,2023-07-13 23:02:54.017
+dbo,DiscountGroupRoleJoiner,DiscountGroupId,PK_DiscountGroupRoleJoiner,false,false,2023-09-15 23:20:27.780
+dbo,DiscountGroupRoleJoiner,OperatorId,PK_DiscountGroupRoleJoiner,false,false,2023-09-15 23:20:27.780
+dbo,DiscountGroupRoleJoiner,OperatorId,_WA_Sys_00000002_1B33F057,true,false,2025-10-21 09:53:26.547
+dbo,DiscountGroupRoleJoiner,RoleId,_WA_Sys_00000003_1B33F057,true,false,2023-09-15 23:20:27.783
+dbo,DiscountGroupRoleJoiner,RoleId,PK_DiscountGroupRoleJoiner,false,false,2023-09-15 23:20:27.780
+dbo,DiscountGroupUserJoiner,DiscountGroupId,PK_DiscountGroupUserJoiner,false,false,
+dbo,DiscountGroupUserJoiner,OperatorId,PK_DiscountGroupUserJoiner,false,false,
+dbo,DiscountGroupUserJoiner,OperatorId,_WA_Sys_00000002_2E46C4CB,true,false,2025-10-12 09:47:51.987
+dbo,DiscountGroupUserJoiner,UserId,PK_DiscountGroupUserJoiner,false,false,
+dbo,DocumentUploadBackups,_RowNumber,PK_DocumentUploadBackups,false,false,
+dbo,DocumentUploadBackups,OperatorId,_WA_Sys_00000003_71FCD09A,true,false,2024-09-27 08:29:33.377
+dbo,DocumentUploads,_RowNumber,PK_DocumentUploads,false,false,2023-08-30 23:26:46.470
+dbo,DocumentUploads,AddedToTrashCanAt,ix_OperatorId_DocumentTypeId_UserId_UserDocumentationTypeId_AddedToTrashCanAt,false,false,2025-10-21 09:53:38.223
+dbo,DocumentUploads,DocumentTypeId,ix_OperatorId_DocumentTypeId_UserId_UserDocumentationTypeId_AddedToTrashCanAt,false,false,2025-10-21 09:53:38.223
+dbo,DocumentUploads,OperatorId,ix_OperatorId_DocumentTypeId_UserId_UserDocumentationTypeId_AddedToTrashCanAt,false,false,2025-10-21 09:53:38.223
+dbo,DocumentUploads,UserDocumentationTypeId,ix_OperatorId_DocumentTypeId_UserId_UserDocumentationTypeId_AddedToTrashCanAt,false,false,2025-10-21 09:53:38.223
+dbo,DocumentUploads,UserId,ix_OperatorId_DocumentTypeId_UserId_UserDocumentationTypeId_AddedToTrashCanAt,false,false,2025-10-21 09:53:38.223
+dbo,Endorsements,_RowId,PK_Endorsements,false,false,2023-08-30 23:08:01.493
+dbo,Endorsements,EndorsementId,UK_Endorsements_EndorsementId,false,false,
+dbo,Endorsements,EndorsementTypeId,ix_Endorsements_OperatorId_UserId_EndorsementTypeId,false,false,2025-10-21 09:51:11.830
+dbo,Endorsements,OperatorId,ix_Endorsements_OperatorId_UserId_EndorsementTypeId,false,false,2025-10-21 09:51:11.830
+dbo,Endorsements,UserId,ix_Endorsements_OperatorId_UserId_EndorsementTypeId,false,false,2025-10-21 09:51:11.830
+dbo,EndorsementsHistory,_RowId,PK_EndorsementsHistory,false,false,2023-09-01 23:05:55.110
+dbo,EndorsementsHistory,CompanyId,_WA_Sys_00000005_5FA91635,true,false,2025-10-21 09:51:00.820
+dbo,EnrollmentCreditPreviousTotals,_RowId,PK_EnrollmentCreditPreviousTotals,false,false,2023-09-01 23:00:36.970
+dbo,EnrollmentCreditPreviousTotals,EnrollmentId,nci_wi_EnrollmentCreditPreviousTotals_EA93683341CC50D25975B2140147BD5E,false,false,2025-10-04 12:06:59.713
+dbo,EnrollmentCreditPreviousTotals,OperatorId,nci_wi_EnrollmentCreditPreviousTotals_EA93683341CC50D25975B2140147BD5E,false,false,2025-10-04 12:06:59.713
+dbo,EnrollmentCreditPreviousTotals,Value,nci_wi_EnrollmentCreditPreviousTotals_EA93683341CC50D25975B2140147BD5E,false,false,2025-10-04 12:06:59.713
+dbo,EnrollmentCredits,_RowId,PK_EnrollmentCredits,false,false,2023-08-31 23:00:26.033
+dbo,EnrollmentCredits,EnrollmentId,UK_EnrollmentCredits_EnrollmentId,false,false,
+dbo,EnrollmentCredits,OperatorId,_WA_Sys_00000002_4F72AE6C,true,false,2025-10-21 12:08:37.870
+dbo,EnrollmentDocuments,_RowId,PK_EnrollmentDocuments,false,false,2023-08-30 23:01:11.153
+dbo,EnrollmentDocuments,EnrollmentDocumentId,nci_wi_EnrollmentDocuments_6F653A1B4C1C161A05BE0DF4FD33178E,false,false,2025-03-12 21:03:27.660
+dbo,EnrollmentDocuments,EnrollmentId,nci_wi_EnrollmentDocuments_26C113C566371C8C6766A92223933D07,false,false,
+dbo,EnrollmentDocuments,OperatorId,nci_wi_EnrollmentDocuments_26C113C566371C8C6766A92223933D07,false,false,
+dbo,EnrollmentDocuments,OperatorId,nci_wi_EnrollmentDocuments_6F653A1B4C1C161A05BE0DF4FD33178E,false,false,2025-03-12 21:03:27.660
+dbo,EnrollmentDocuments,OperatorId,_WA_Sys_00000003_6561EF8B,true,false,2025-10-21 12:08:43.550
+dbo,EnrollmentDocuments,SignedAtUtc,nci_wi_EnrollmentDocuments_26C113C566371C8C6766A92223933D07,false,false,
+dbo,EnrollmentInstructors,_RowId,PK_EnrollmentInstructors,false,false,2023-08-30 23:01:13.523
+dbo,EnrollmentInstructors,EnrollmentId,nci_wi_EnrollmentInstructors_1F3EE2B3476CD28D89E1BFA868C12DB2,false,false,
+dbo,EnrollmentInstructors,EnrollmentId,nci_wi_EnrollmentInstructors_BABD0DFA15F4E24DB55656509AB99C56,false,false,2025-10-04 12:07:02.880
+dbo,EnrollmentInstructors,OperatorId,ix_EnrollmentInstructors_OperatorId,false,false,2025-03-12 21:13:07.500
+dbo,EnrollmentInstructors,OperatorId,nci_wi_EnrollmentInstructors_BABD0DFA15F4E24DB55656509AB99C56,false,false,2025-10-04 12:07:02.880
+dbo,EnrollmentInstructors,PrimaryInstructor,nci_wi_EnrollmentInstructors_BABD0DFA15F4E24DB55656509AB99C56,false,false,2025-10-04 12:07:02.880
+dbo,Enrollments,_RowId,PK_Enrollments,false,false,2025-01-31 14:26:48.630
+dbo,Enrollments,CourseId,_WA_Sys_00000003_066DDD9B,true,false,2025-10-21 18:04:02.783
+dbo,Enrollments,CourseId,nci_wi_Enrollments_096E7FF34214652A2DC402FD1D781BA8,false,false,2025-10-21 18:04:03.003
+dbo,Enrollments,CourseProfileId,_WA_Sys_0000001C_066DDD9B,true,false,2024-11-18 21:02:18.290
+dbo,Enrollments,CourseProfileOverallProgressStatus,_WA_Sys_0000001D_066DDD9B,true,false,2025-08-08 14:00:32.953
+dbo,Enrollments,EnrollmentDate,_WA_Sys_00000009_066DDD9B,true,false,2025-08-08 13:57:35.063
+dbo,Enrollments,EnrollmentId,UK_Enrollments_EnrollmentId,false,false,2025-10-21 18:04:02.930
+dbo,Enrollments,EnrollmentId,nci_wi_Enrollments_096E7FF34214652A2DC402FD1D781BA8,false,false,2025-10-21 18:04:03.003
+dbo,Enrollments,EnrollmentStatus,nci_wi_Enrollments_096E7FF34214652A2DC402FD1D781BA8,false,false,2025-10-21 18:04:03.003
+dbo,Enrollments,OperatorId,nci_wi_Enrollments_096E7FF34214652A2DC402FD1D781BA8,false,false,2025-10-21 18:04:03.003
+dbo,Enrollments,OperatorId,IDX_Enrollments_OperatorId_CourseIdEnrollmentIdStudentIdEnrollmentDate,false,false,2025-10-21 12:08:37.793
+dbo,Enrollments,StudentId,nci_wi_Enrollments_096E7FF34214652A2DC402FD1D781BA8,false,false,2025-10-21 18:04:03.003
+dbo,EnrollmentsLog,_RowNumber,PK_EnrollmentsLog,false,false,
+dbo,EnrollmentTimes,EnrollmentId,_WA_Sys_00000003_24F264BB,true,false,2023-08-30 23:02:21.690
+dbo,EnrollmentTimes,EnrollmentId,PK_EnrollmentTimes,false,false,2025-10-21 12:09:39.877
+dbo,EnrollmentTimes,OperatorId,PK_EnrollmentTimes,false,false,2025-10-21 12:09:39.877
+dbo,EnrollmentTimes,TimeFieldId,_WA_Sys_00000004_24F264BB,true,false,2023-08-30 23:02:21.800
+dbo,EnrollmentTimes,TimeFieldId,PK_EnrollmentTimes,false,false,2025-10-21 12:09:39.877
+dbo,Exams,_RowId,PK_Exams,false,false,2023-08-31 23:00:39.907
+dbo,Exams,ExamId,UK_Exams_ExamId,false,false,
+dbo,Exams,OperatorId,_WA_Sys_00000004_21C0F255,true,false,2025-10-21 12:08:38.387
+dbo,ExamScoreDocuments,_RowId,PK_ExamScoreDocuments,false,false,2023-08-30 23:01:51.590
+dbo,ExamScoreDocuments,OperatorId,_WA_Sys_00000003_4321E620,true,false,2025-10-21 12:09:05.860
+dbo,ExamScores,_RowId,PK_ExamScores,false,false,2023-08-30 23:01:17.203
+dbo,ExamScores,ExamScoreId,UK_ExamScores_ExamScoreId,false,false,
+dbo,ExamScores,OperatorId,_WA_Sys_00000005_0E64051E,true,false,2025-10-21 12:08:43.283
+dbo,FlightInstructorCertificate,_RowId,PK_FlightInstructorCertificate,false,false,2023-08-30 23:07:21.457
+dbo,FlightInstructorCertificate,CompanyId,_WA_Sys_00000003_55EAA1D1,true,false,2025-10-21 09:51:02.283
+dbo,FlightInstructorCertificate,UserId,UK_FlightInstructorCertificate,false,false,
+dbo,Headings,_RowId,PK_Headings,false,false,2023-08-30 23:01:18.537
+dbo,Headings,CourseId,nci_wi_Headings_B9A95A336CDE3A7CB133E66714625055,false,false,
+dbo,Headings,CourseId,nci_wi_Headings_D925C8F98F1EFE6EB89336765BA35BD2,false,false,2025-03-12 21:13:08.290
+dbo,Headings,HeadingId,UK_Headings_HeadingId,false,false,
+dbo,Headings,LessonId,IDX_Headings_LessonId,false,false,
+dbo,Headings,LessonId,nci_wi_Headings_B9A95A336CDE3A7CB133E66714625055,false,false,
+dbo,Headings,OperatorId,_WA_Sys_00000006_1328BA3B,true,false,2025-10-21 12:08:47.997
+dbo,Headings,OperatorId,nci_wi_Headings_D925C8F98F1EFE6EB89336765BA35BD2,false,false,2025-03-12 21:13:08.290
+dbo,Headings,OperatorId,nci_wi_Headings_B9A95A336CDE3A7CB133E66714625055,false,false,
+dbo,Headings,PartId,nci_wi_Headings_B9A95A336CDE3A7CB133E66714625055,false,false,
+dbo,HistoricalTrainingSessionAirports,_RowId,PK_HistoricalTrainingSessionAirports,false,false,
+dbo,HistoricalTrainingSessionAirports,AirportId,UK_HistoricalTrainingSessionAirports_HistoricalTrainingSessionIdAirportIdOrder,false,false,
+dbo,HistoricalTrainingSessionAirports,HistoricalTrainingSessionId,UK_HistoricalTrainingSessionAirports_HistoricalTrainingSessionIdAirportIdOrder,false,false,
+dbo,HistoricalTrainingSessionAirports,OperatorId,_WA_Sys_00000002_1C481021,true,false,2025-10-21 12:09:18.813
+dbo,HistoricalTrainingSessionAirports,Order,UK_HistoricalTrainingSessionAirports_HistoricalTrainingSessionIdAirportIdOrder,false,false,
+dbo,HistoricalTrainingSessionCustomTaskGrades,_RowId,PK_HistoricalTrainingSessionCustomTaskGrades,false,false,
+dbo,HistoricalTrainingSessionCustomTaskGrades,HistoricalTrainingSessionId,UK_HistoricalTrainingSessionCustomTaskGrades_HistoricalTrainingSessionIdTaskId,false,false,
+dbo,HistoricalTrainingSessionCustomTaskGrades,OperatorId,_WA_Sys_00000002_2018A105,true,false,2025-10-20 12:11:25.190
+dbo,HistoricalTrainingSessionCustomTaskGrades,TaskId,UK_HistoricalTrainingSessionCustomTaskGrades_HistoricalTrainingSessionIdTaskId,false,false,
+dbo,HistoricalTrainingSessions,_RowId,PK_HistoricalTrainingSessions,false,false,
+dbo,HistoricalTrainingSessions,HistoricalTrainingSessionId,UK_HistoricalTrainingSessions_HistoricalTrainingSessionId,false,false,
+dbo,HistoricalTrainingSessions,OperatorId,IX_HistoricalTrainingSessions_OperatorIdTrainingSessionId_LoggedAt,false,false,2025-10-05 12:08:46.713
+dbo,HistoricalTrainingSessions,TrainingSessionId,IX_HistoricalTrainingSessions_OperatorIdTrainingSessionId_LoggedAt,false,false,2025-10-05 12:08:46.713
+dbo,HistoricalTrainingSessionTaskGrades,_RowId,PK_HistoricalTrainingSessionTaskGrades,false,false,
+dbo,HistoricalTrainingSessionTaskGrades,HistoricalTrainingSessionId,UK_HistoricalTrainingSessionTaskGrades_HistoricalTrainingSessionIdTaskId,false,false,
+dbo,HistoricalTrainingSessionTaskGrades,OperatorId,nci_wi_HistoricalTrainingSessionTaskGrades_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-10-21 12:09:23.340
+dbo,HistoricalTrainingSessionTaskGrades,TaskId,UK_HistoricalTrainingSessionTaskGrades_HistoricalTrainingSessionIdTaskId,false,false,
+dbo,HistoricalTrainingSessionTaskGrades,TrainingSessionId,nci_wi_HistoricalTrainingSessionTaskGrades_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-10-21 12:09:23.340
+dbo,HistoricalTrainingSessionTimes,_RowId,PK_HistoricalTrainingSessionTimes,false,false,
+dbo,HistoricalTrainingSessionTimes,FieldId,UK_HistoricalTrainingSessionTimes_HistoricalTrainingSessionIdFieldId,false,false,
+dbo,HistoricalTrainingSessionTimes,HistoricalTrainingSessionId,UK_HistoricalTrainingSessionTimes_HistoricalTrainingSessionIdFieldId,false,false,
+dbo,HistoricalTrainingSessionTimes,OperatorId,nci_wi_HistoricalTrainingSessionTimes_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-10-04 12:08:57.520
+dbo,HistoricalTrainingSessionTimes,TrainingSessionId,nci_wi_HistoricalTrainingSessionTimes_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-10-04 12:08:57.520
+dbo,InstructionTypes,InstructionTypeId,PK_InstructionTypes,false,false,2023-08-28 23:06:02.587
+dbo,InstructionTypes,OperatorId,_WA_Sys_00000002_7F4BDEC0,true,false,2025-09-26 09:33:50.573
+dbo,InvoiceLocationPreferences,_RowNumber,PK_InvoiceLocationPreferences,false,false,2023-07-13 23:01:35.927
+dbo,InvoiceLocationPreferences,OperatorId,_WA_Sys_00000002_35A7EF71,true,false,2025-07-30 09:32:21.960
+dbo,InvoicingAccount,InvoicingAccountId,PK_InvoicingAccount,false,false,2023-07-13 23:01:35.847
+dbo,InvoicingAccount,OperatorId,_WA_Sys_00000002_5CC1BC92,true,false,2025-10-20 09:45:54.117
+dbo,InvoicingAccountPayments,_RowId,PK_InvoicingAccountPayments,false,false,2023-06-12 23:03:09.053
+dbo,InvoicingAccountPayments,AccountPaymentId,UK_InvoicingAccountPayments,false,false,
+dbo,InvoicingAccountPayments,OperatorId,_WA_Sys_00000003_06B7F65E,true,false,2025-06-21 09:16:49.217
+dbo,LabelCategories,LabelCategoryGuid,IX_LabelCategories_LabelCategoryGuid_OperatorId,false,false,
+dbo,LabelCategories,LabelCategoryId,PK_LabelCategories,false,false,
+dbo,LabelCategories,OperatorId,IX_LabelCategories_LabelCategoryGuid_OperatorId,false,false,
+dbo,LabelCategories,OperatorId,_WA_Sys_00000002_4A0EDAD1,true,false,2025-10-17 09:56:17.067
+dbo,Labels,LabelGuid,IX_Labels_LabelGuid_OperatorId,false,false,
+dbo,Labels,LabelId,PK_Labels,false,false,
+dbo,Labels,OperatorId,IX_Labels_LabelGuid_OperatorId,false,false,
+dbo,Labels,OperatorId,_WA_Sys_00000002_4ED38FEE,true,false,2025-10-19 09:47:19.337
+dbo,LabelToRoleJoiner,LabelId,PK_LabelToRoleJoiner,false,false,
+dbo,LabelToRoleJoiner,LabelId,IX_LabelToRoleJoiner_LabelId_OperatorId,false,false,
+dbo,LabelToRoleJoiner,OperatorId,IX_LabelToRoleJoiner_LabelId_OperatorId,false,false,
+dbo,LabelToRoleJoiner,OperatorId,PK_LabelToRoleJoiner,false,false,
+dbo,LabelToRoleJoiner,OperatorId,IX_LabelToRoleJoiner_RoleId_OperatorId,false,false,
+dbo,LabelToRoleJoiner,OperatorId,_WA_Sys_00000002_548C6944,true,false,2025-10-21 09:55:09.490
+dbo,LabelToRoleJoiner,RoleId,PK_LabelToRoleJoiner,false,false,
+dbo,LabelToRoleJoiner,RoleId,IX_LabelToRoleJoiner_RoleId_OperatorId,false,false,
+dbo,LabelToUserJoiner,LabelId,PK_LabelToUserJoiner,false,false,
+dbo,LabelToUserJoiner,LabelId,IX_LabelToUserJoiner_LabelId_OperatorId,false,false,
+dbo,LabelToUserJoiner,OperatorId,IX_LabelToUserJoiner_LabelId_OperatorId,false,false,
+dbo,LabelToUserJoiner,OperatorId,IX_LabelToUserJoiner_UserGuid_OperatorId,false,false,
+dbo,LabelToUserJoiner,OperatorId,_WA_Sys_00000002_585CFA28,true,false,2025-10-21 09:54:43.033
+dbo,LabelToUserJoiner,OperatorId,PK_LabelToUserJoiner,false,false,
+dbo,LabelToUserJoiner,UserGuid,PK_LabelToUserJoiner,false,false,
+dbo,LabelToUserJoiner,UserGuid,IX_LabelToUserJoiner_UserGuid_OperatorId,false,false,
+dbo,LastFlightDates,_RowNumber,PK_LastFlightDate,false,false,2023-08-30 23:35:33.990
+dbo,LastFlightDates,LastFlightDate,_WA_Sys_00000004_2077C861,true,false,2025-08-08 14:00:32.507
+dbo,LastFlightDates,LastFlightDateWithInstruction,_WA_Sys_00000005_2077C861,true,false,2024-11-18 20:41:17.850
+dbo,LastFlightDates,OperatorId,ix_OperatorID_UserID,false,false,2025-10-21 09:56:41.820
+dbo,LastFlightDates,UserId,ix_OperatorID_UserID,false,false,2025-10-21 09:56:41.820
+dbo,LastFlightDates,UserId,_WA_Sys_00000003_2077C861,true,false,2025-08-08 14:00:32.467
+dbo,LastFlightDatesByMakeModel,_RowNumber,PK_LastFlightDateByMakeModel,false,false,2023-08-30 23:36:57.343
+dbo,LastFlightDatesByMakeModel,MakeId,ix_OperatorId_UserID_MakeId_ModelID,false,false,2025-10-21 09:52:32.777
+dbo,LastFlightDatesByMakeModel,ModelId,ix_OperatorId_UserID_MakeId_ModelID,false,false,2025-10-21 09:52:32.777
+dbo,LastFlightDatesByMakeModel,OperatorId,ix_OperatorId_UserID_MakeId_ModelID,false,false,2025-10-21 09:52:32.777
+dbo,LastFlightDatesByMakeModel,UserId,ix_OperatorId_UserID_MakeId_ModelID,false,false,2025-10-21 09:52:32.777
+dbo,LastFlightDatesHistory,_RowNumber,PK_LastFlightDatesHistory,false,false,2023-08-30 23:34:22.260
+dbo,LastFlightDatesHistory,OperatorId,IDX_LastFlightDatesHistory_OperatorIdUserId,false,false,2025-10-21 09:57:32.540
+dbo,LastFlightDatesHistory,UserId,IDX_LastFlightDatesHistory_OperatorIdUserId,false,false,2025-10-21 09:57:32.540
+dbo,LastFlightDatesLog,_RowNumber,PK_LastFlightDateLog,false,false,2023-08-30 23:30:51.757
+dbo,LastFlightDatesLog,FlightRecordId,ix_OperatorId_UserId_FlightRecordId,false,false,2025-10-21 09:53:54.540
+dbo,LastFlightDatesLog,HasInstruction,ix_OperatorId_UserId_MakeId_ModelId_HasInstruction_Includes,false,false,
+dbo,LastFlightDatesLog,MakeId,ix_OperatorId_UserId_MakeId_ModelId_HasInstruction_Includes,false,false,
+dbo,LastFlightDatesLog,ModelId,ix_OperatorId_UserId_MakeId_ModelId_HasInstruction_Includes,false,false,
+dbo,LastFlightDatesLog,OperatorId,ix_OperatorId_UserId_MakeId_ModelId_HasInstruction_Includes,false,false,
+dbo,LastFlightDatesLog,OperatorId,ix_OperatorId_UserId_FlightRecordId,false,false,2025-10-21 09:53:54.540
+dbo,LastFlightDatesLog,UserId,ix_OperatorId_UserId_FlightRecordId,false,false,2025-10-21 09:53:54.540
+dbo,LastFlightDatesLog,UserId,ix_OperatorId_UserId_MakeId_ModelId_HasInstruction_Includes,false,false,
+dbo,LessonGrades,_RowId,PK_LessonGrades,false,false,2024-12-06 15:13:38.847
+dbo,LessonGrades,CourseId,nci_wi_LessonGrades_130DCE20FE639D9CEE706D26BFF1C68F,false,false,2025-10-21 12:08:39.963
+dbo,LessonGrades,CourseId,nci_wi_LessonGrades_A34ED4A0CA08290CD1FF7B03411DC997,false,false,2025-03-12 21:13:08.550
+dbo,LessonGrades,DefaultLowestPassingGrade,nci_wi_LessonGrades_130DCE20FE639D9CEE706D26BFF1C68F,false,false,2025-10-21 12:08:39.963
+dbo,LessonGrades,DefaultLowestPassingGrade,nci_wi_LessonGrades_A34ED4A0CA08290CD1FF7B03411DC997,false,false,2025-03-12 21:13:08.550
+dbo,LessonGrades,LessonGradeId,UK_LessonGrades_LessonGradeId,false,false,2024-12-06 15:13:00.297
+dbo,LessonGrades,LessonGradeScaleId,nci_wi_LessonGrades_130DCE20FE639D9CEE706D26BFF1C68F,false,false,2025-10-21 12:08:39.963
+dbo,LessonGrades,OperatorId,nci_wi_LessonGrades_130DCE20FE639D9CEE706D26BFF1C68F,false,false,2025-10-21 12:08:39.963
+dbo,LessonGradeScales,_RowId,PK_LessonGradeScales,false,false,2023-08-30 23:01:15.520
+dbo,LessonGradeScales,CourseId,UK_LessonGradeScales_CourseId_Name,false,false,
+dbo,LessonGradeScales,LessonGradeScaleId,UK_LessonGradeScales_LessonGradeScaleId,false,false,
+dbo,LessonGradeScales,Name,UK_LessonGradeScales_CourseId_Name,false,false,
+dbo,LessonGradeScales,OperatorId,_WA_Sys_00000004_73DA2C14,true,false,2025-10-21 12:08:41.073
+dbo,LessonNames,_RowNumber,PK_LessonNames,false,false,2023-08-30 23:33:13.080
+dbo,LessonNames,CourseId,UK_LessonNames_OperatorId_CourseId_LessonId,false,false,2025-10-21 09:52:20.840
+dbo,LessonNames,LessonId,UK_LessonNames_OperatorId_CourseId_LessonId,false,false,2025-10-21 09:52:20.840
+dbo,LessonNames,LessonId,dbo.IDX_LessonNames_LessonId_NameIsStageCheckStageCheckName,false,false,
+dbo,LessonNames,OperatorId,UK_LessonNames_OperatorId_CourseId_LessonId,false,false,2025-10-21 09:52:20.840
+dbo,Lessons,_RowId,PK_Lessons,false,false,2024-12-06 14:27:50.793
+dbo,Lessons,CourseId,nci_wi_Lessons_4180C49827CE7B12713F77D9D35BCF5E,false,false,2024-12-05 17:28:56.340
+dbo,Lessons,CourseId,ix_Lessons_CourseId_OperatorId_Status,false,false,2025-03-12 21:03:34.000
+dbo,Lessons,CourseId,nci_msft_1_Lessons_AFD86E8DE4AE7C4D47CBD9C322998075,false,false,2025-03-12 21:03:35.820
+dbo,Lessons,LessonId,UK_Lessons_LessonId,false,false,2024-12-06 14:27:46.590
+dbo,Lessons,OperatorId,nci_wi_Lessons_4180C49827CE7B12713F77D9D35BCF5E,false,false,2024-12-05 17:28:56.340
+dbo,Lessons,OperatorId,ix_Lessons_CourseId_OperatorId_Status,false,false,2025-03-12 21:03:34.000
+dbo,Lessons,OperatorId,_WA_Sys_00000006_0CA5D9DE,true,false,2025-10-21 12:08:49.090
+dbo,Lessons,OperatorId,nci_msft_1_Lessons_AFD86E8DE4AE7C4D47CBD9C322998075,false,false,2025-03-12 21:03:35.820
+dbo,Lessons,Order,nci_wi_Lessons_6156E80F6607D6D9B51E9C5F501A421F,false,false,2024-12-05 17:28:56.360
+dbo,Lessons,PhaseId,nci_wi_Lessons_4180C49827CE7B12713F77D9D35BCF5E,false,false,2024-12-05 17:28:56.340
+dbo,Lessons,PhaseId,nci_wi_Lessons_6156E80F6607D6D9B51E9C5F501A421F,false,false,2024-12-05 17:28:56.360
+dbo,Lessons,StageId,nci_wi_Lessons_4180C49827CE7B12713F77D9D35BCF5E,false,false,2024-12-05 17:28:56.340
+dbo,Lessons,Status,ix_Lessons_CourseId_OperatorId_Status,false,false,2025-03-12 21:03:34.000
+dbo,Lessons,Status,nci_msft_1_Lessons_AFD86E8DE4AE7C4D47CBD9C322998075,false,false,2025-03-12 21:03:35.820
+dbo,LessonTasks,_RowId,PK_LessonTasks,false,false,2024-12-05 21:50:41.817
+dbo,LessonTasks,CourseId,IDX_LessonTasks_HeadingId_CourseId_OperatorId_LessonId_CourseTaskId,false,false,2024-12-05 21:50:41.907
+dbo,LessonTasks,CourseId,Idx_LessonTasks_OperatorIdCourseIdLessonId,false,false,2025-03-12 09:11:17.207
+dbo,LessonTasks,CourseId,_WA_Sys_00000003_20ACD28B,true,false,2024-12-05 21:50:43.480
+dbo,LessonTasks,CourseId,nci_wi_LessonTasks_C6CDCE128D520B5F5AA9490133CE2923,false,false,2025-10-21 12:08:46.493
+dbo,LessonTasks,CourseTaskId,IDX_LessonTasks_HeadingId_CourseId_OperatorId_LessonId_CourseTaskId,false,false,2024-12-05 21:50:41.907
+dbo,LessonTasks,CourseTaskId,IDX_LessonTasks_CourseTaskId,false,false,2024-12-05 21:50:41.383
+dbo,LessonTasks,HeadingId,IDX_LessonTasks_HeadingId_CourseId_OperatorId_LessonId_CourseTaskId,false,false,2024-12-05 21:50:41.907
+dbo,LessonTasks,HeadingId,nci_wi_LessonTasks_C6CDCE128D520B5F5AA9490133CE2923,false,false,2025-10-21 12:08:46.493
+dbo,LessonTasks,LessonId,Idx_LessonTasks_OperatorIdCourseIdLessonId,false,false,2025-03-12 09:11:17.207
+dbo,LessonTasks,LessonId,IDX_LessonTasks_LessonId,false,false,2024-12-05 21:50:43.533
+dbo,LessonTasks,LessonId,IDX_LessonTasks_HeadingId_CourseId_OperatorId_LessonId_CourseTaskId,false,false,2024-12-05 21:50:41.907
+dbo,LessonTasks,LessonTaskId,UK_LessonTasks_LessonTaskId,false,false,2024-12-05 21:50:43.593
+dbo,LessonTasks,OperatorId,Idx_LessonTasks_OperatorIdCourseIdLessonId,false,false,2025-03-12 09:11:17.207
+dbo,LessonTasks,OperatorId,IDX_LessonTasks_HeadingId_CourseId_OperatorId_LessonId_CourseTaskId,false,false,2024-12-05 21:50:41.907
+dbo,LessonTasks,OperatorId,nci_wi_LessonTasks_C6CDCE128D520B5F5AA9490133CE2923,false,false,2025-10-21 12:08:46.493
+dbo,LessonTrackedTimeFields,_RowId,PK_LessonTrackedTimeFields,false,false,2023-08-30 23:01:28.973
+dbo,LessonTrackedTimeFields,CourseId,nci_wi_LessonTrackedTimeFields_8CDAAADE5013E8E9AEDEDB7323AB1AB9,false,false,2024-12-05 21:52:17.760
+dbo,LessonTrackedTimeFields,FieldId,nci_wi_LessonTrackedTimeFields_79B1BEEF11F63E3A2E5CA4F374AF21D4,false,false,2024-12-05 21:52:17.857
+dbo,LessonTrackedTimeFields,FieldId,ix_LessonTrackedTimeFields_LessonId_OperatorId_FieldId,false,false,2025-03-12 21:13:09.357
+dbo,LessonTrackedTimeFields,LessonId,ix_LessonTrackedTimeFields_LessonId_OperatorId_FieldId,false,false,2025-03-12 21:13:09.357
+dbo,LessonTrackedTimeFields,LessonId,nci_wi_LessonTrackedTimeFields_79B1BEEF11F63E3A2E5CA4F374AF21D4,false,false,2024-12-05 21:52:17.857
+dbo,LessonTrackedTimeFields,OperatorId,nci_wi_LessonTrackedTimeFields_79B1BEEF11F63E3A2E5CA4F374AF21D4,false,false,2024-12-05 21:52:17.857
+dbo,LessonTrackedTimeFields,OperatorId,_WA_Sys_00000006_3A6CA48E,true,false,2025-10-21 12:08:41.707
+dbo,LessonTrackedTimeFields,OperatorId,ix_LessonTrackedTimeFields_LessonId_OperatorId_FieldId,false,false,2025-03-12 21:13:09.357
+dbo,LessonTrackedTimeFields,OperatorId,nci_wi_LessonTrackedTimeFields_8CDAAADE5013E8E9AEDEDB7323AB1AB9,false,false,2024-12-05 21:52:17.760
+dbo,MaintenanceReminderResolutions,_RowId,PK_MaintenanceReminderResolutions,false,false,2023-08-30 23:44:19.060
+dbo,MaintenanceReminderResolutions,OperatorId,_WA_Sys_00000003_5C0D8F7B,true,false,2025-10-21 09:53:16.517
+dbo,MaintenanceReminderResolutions,ResolutionId,UK_MaintenanceReminderResolutions_ResolutionId,false,false,
+dbo,MaintenanceReminders,_RowId,PK_MaintenanceReminders,false,false,2023-08-30 23:44:06.610
+dbo,MaintenanceReminders,Active,ix_OperatorId_Active_ReminderStatus_Includes,false,false,2025-10-21 09:53:00.820
+dbo,MaintenanceReminders,Active,ix_OperatorId_Active_ReminderStatus_Includes_TemplateID_AircraftID,false,false,2024-12-06 15:33:14.170
+dbo,MaintenanceReminders,Active,ix_OperatorId_AircraftId_Active_Includes,false,false,2024-12-06 15:33:14.190
+dbo,MaintenanceReminders,Active,ix_OperatorId_TemplateId_Active_Misconfigured,false,false,2024-12-06 15:33:14.220
+dbo,MaintenanceReminders,AircraftId,ix_OperatorId_AircraftId_Active_Includes,false,false,2024-12-06 15:33:14.190
+dbo,MaintenanceReminders,AircraftId,_WA_Sys_00000005_6B44E613,true,false,2024-12-06 15:33:14.160
+dbo,MaintenanceReminders,Misconfigured,ix_OperatorId_TemplateId_Active_Misconfigured,false,false,2024-12-06 15:33:14.220
+dbo,MaintenanceReminders,OperatorId,ix_OperatorId_TemplateId_Active_Misconfigured,false,false,2024-12-06 15:33:14.220
+dbo,MaintenanceReminders,OperatorId,UK_MaintenanceReminders,false,false,2024-12-06 15:33:14.207
+dbo,MaintenanceReminders,OperatorId,ix_OperatorId_Active_ReminderStatus_Includes_TemplateID_AircraftID,false,false,2024-12-06 15:33:14.170
+dbo,MaintenanceReminders,OperatorId,ix_OperatorId_AircraftId_Active_Includes,false,false,2024-12-06 15:33:14.190
+dbo,MaintenanceReminders,OperatorId,ix_OperatorId_Active_ReminderStatus_Includes,false,false,2025-10-21 09:53:00.820
+dbo,MaintenanceReminders,ReminderId,UK_MaintenanceReminders,false,false,2024-12-06 15:33:14.207
+dbo,MaintenanceReminders,ReminderStatus,ix_OperatorId_Active_ReminderStatus_Includes_TemplateID_AircraftID,false,false,2024-12-06 15:33:14.170
+dbo,MaintenanceReminders,ReminderStatus,ix_OperatorId_Active_ReminderStatus_Includes,false,false,2025-10-21 09:53:00.820
+dbo,MaintenanceReminders,TemplateId,ix_OperatorId_TemplateId_Active_Misconfigured,false,false,2024-12-06 15:33:14.220
+dbo,MaintenanceReminderTemplates,_RowId,PK_MaintenanceReminderTemplates,false,false,2023-09-05 23:29:29.780
+dbo,MaintenanceReminderTemplates,OperatorId,UK_MaintenanceReminderTemplates,false,false,
+dbo,MaintenanceReminderTemplates,OperatorId,_WA_Sys_00000003_69478F08,true,false,2025-10-20 09:48:23.113
+dbo,MaintenanceReminderTemplates,TemplateId,UK_MaintenanceReminderTemplates,false,false,
+dbo,MassEmailAttachments,_rowId,PK_MassEmailAttachments,false,false,2023-09-12 23:23:48.370
+dbo,MassEmailAttachments,OperatorId,_WA_Sys_00000003_63F8CA06,true,false,2025-10-21 09:52:20.970
+dbo,MassEmailPeopleGroupIds,_RowId,PK_MassEmailPeopleGroupIds,false,false,2023-08-30 23:34:42.347
+dbo,MassEmailPeopleGroupIds,OperatorId,_WA_Sys_00000002_13A7DD28,true,false,2025-10-20 09:47:32.870
+dbo,MassEmailRoleIds,_RowId,PK_MassEmailRoleIds,false,false,2023-08-30 23:36:15.163
+dbo,MassEmailRoleIds,MassEmailId,UK_MassEmailRoleIds_MassEmailId_RoleId,false,false,
+dbo,MassEmailRoleIds,OperatorId,_WA_Sys_00000005_490FC9A0,true,false,2025-10-21 09:52:42.383
+dbo,MassEmailRoleIds,RoleId,UK_MassEmailRoleIds_MassEmailId_RoleId,false,false,
+dbo,MassEmails,_rowId,PK_MassEmails,false,false,2023-08-31 23:23:15.623
+dbo,MassEmails,MassEmailId,UK_MassEmails_MassEmailId,false,false,
+dbo,MassEmails,OperatorId,_WA_Sys_00000003_76D69450,true,false,2025-10-21 09:52:48.880
+dbo,MassEmailUserIds,_RowId,PK_MassEmailUserIds,false,false,2023-08-30 23:37:08.553
+dbo,MassEmailUserIds,MassEmailId,UK_MassEmailUserIds_MassEmailId_UserId,false,false,
+dbo,MassEmailUserIds,OperatorId,_WA_Sys_00000005_164F3FA9,true,false,2025-10-21 09:53:37.947
+dbo,MassEmailUserIds,UserId,UK_MassEmailUserIds_MassEmailId_UserId,false,false,
+dbo,MeetingRooms,_RowNumber,PK_MeetingRooms,false,false,2023-07-13 23:04:13.640
+dbo,MeetingRooms,MeetingRoomId,_WA_Sys_00000002_36BC0F3B,true,false,2024-12-05 17:13:21.063
+dbo,MeetingRooms,OperatorId,_WA_Sys_00000003_36BC0F3B,true,false,2025-10-20 09:47:26.853
+dbo,MembershipSettings,_RowNumber,PK_MembershipSettings,false,false,
+dbo,MembershipSettings,OperatorId,_WA_Sys_00000002_47E69B3D,true,false,2025-05-06 09:12:34.137
+dbo,MembershipSubscriptions,_RowNumber,PK_MembershipSubscriptions,false,false,
+dbo,MembershipSubscriptions,OperatorId,_WA_Sys_00000003_5614BF03,true,false,2025-10-21 09:52:27.070
+dbo,MembershipSubscriptionsHistory,_RowNumber,PK_MembershipSubscriptionsHistory,false,false,
+dbo,MembershipSubscriptionsHistory,OperatorId,_WA_Sys_00000002_002AF460,true,false,2025-10-21 09:54:31.020
+dbo,MeterRecordSegments,_RowId,PK__MeterRec__94D7B0A4B23CE40E,false,false,2023-08-30 23:46:46.020
+dbo,MeterRecordSegments,OperatorId,_WA_Sys_00000002_072CF7AA,true,false,2025-10-21 09:53:20.527
+dbo,OperatorAirportIdentifiers,_RowId,PK_OperatorAirportIdentifiers,false,false,2023-09-08 23:01:24.850
+dbo,OperatorAirportIdentifiers,AirportId,UK_OperatorAirportIdentifiers_OperatorIdAirportId,false,false,2025-10-04 12:07:22.757
+dbo,OperatorAirportIdentifiers,OperatorId,UK_OperatorAirportIdentifiers_OperatorIdAirportId,false,false,2025-10-04 12:07:22.757
+dbo,OperatorSettings,_RowNumber,PK_CompanySettings,false,false,2023-07-13 23:04:39.693
+dbo,OperatorSettings,OperatorId,ix_OperatorId_Includes,false,false,2025-06-22 09:31:31.910
+dbo,Parts,_RowId,PK_Parts,false,false,2023-08-30 23:01:26.477
+dbo,Parts,CourseId,nci_wi_Parts_191F447189545FC75A4BA46CBF69623A,false,false,2025-03-12 21:13:09.537
+dbo,Parts,LessonId,nci_wi_Parts_191F447189545FC75A4BA46CBF69623A,false,false,2025-03-12 21:13:09.537
+dbo,Parts,OperatorId,nci_wi_Parts_191F447189545FC75A4BA46CBF69623A,false,false,2025-03-12 21:13:09.537
+dbo,Parts,OperatorId,_WA_Sys_00000004_505BE5AD,true,false,2025-10-21 12:08:48.107
+dbo,Parts,PartId,UK_Parts_PartId,false,false,
+dbo,PeopleGroupActivityTypes,_RowNumber,PK_PeopleGroupActivityTypes,false,false,
+dbo,PeopleGroups,_RowNumber,PK_PeopleGroups,false,false,2023-08-31 23:23:58.727
+dbo,PeopleGroups,OperatorId,_WA_Sys_00000002_6A5BAED2,true,false,2025-10-21 09:52:28.887
+dbo,PeopleGroups,PeopleGroupId,_WA_Sys_00000003_6A5BAED2,true,false,2024-12-06 13:56:47.860
+dbo,PersonNotes,CompanyId,_WA_Sys_00000002_07EC11B9,true,false,2025-10-21 09:54:04.180
+dbo,PersonNotes,PersonNoteId,PK_PersonNotes,false,false,2023-08-30 23:36:13.320
+dbo,Phases,_RowId,PK_Phases,false,false,2024-12-05 17:29:43.277
+dbo,Phases,CourseId,nci_wi_Phases_63B661663F46C4D0137F4C76C60099B6,false,false,2025-03-12 21:13:09.967
+dbo,Phases,OperatorId,nci_wi_Phases_63B661663F46C4D0137F4C76C60099B6,false,false,2025-03-12 21:13:09.967
+dbo,Phases,OperatorId,_WA_Sys_00000005_627A95E8,true,false,2025-10-21 12:08:45.697
+dbo,Phases,PhaseId,UK_Phases_PhaseId,false,false,2024-12-05 17:29:43.260
+dbo,Phases,StageId,_WA_Sys_00000003_627A95E8,true,false,2023-05-25 16:18:20.120
+dbo,Phases,StageId,nci_wi_Phases_63B661663F46C4D0137F4C76C60099B6,false,false,2025-03-12 21:13:09.967
+dbo,PhaseTrackedTimeFields,_RowId,PK_PhaseTrackedTimeFields,false,false,2023-08-31 23:00:59.540
+dbo,PhaseTrackedTimeFields,CourseId,nci_wi_PhaseTrackedTimeFields_8D499FE92D0DD8A350AE4B1C9C5264F9,false,false,2025-03-12 21:13:09.697
+dbo,PhaseTrackedTimeFields,FieldId,nci_wi_PhaseTrackedTimeFields_8D499FE92D0DD8A350AE4B1C9C5264F9,false,false,2025-03-12 21:13:09.697
+dbo,PhaseTrackedTimeFields,OperatorId,_WA_Sys_00000005_6DEC4894,true,false,2025-10-21 12:08:53.977
+dbo,PhaseTrackedTimeFields,OperatorId,nci_wi_PhaseTrackedTimeFields_8D499FE92D0DD8A350AE4B1C9C5264F9,false,false,2025-03-12 21:13:09.697
+dbo,PhaseTrackedTimeFields,PhaseId,nci_wi_PhaseTrackedTimeFields_8D499FE92D0DD8A350AE4B1C9C5264F9,false,false,2025-03-12 21:13:09.697
+dbo,PhotoIds,_RowId,PK_PhotoIds,false,false,2023-08-30 23:37:46.583
+dbo,PhotoIds,OperatorId,_WA_Sys_00000003_20B7BF83,true,false,2025-10-21 09:55:07.070
+dbo,PilotMedicalCertificate,CompanyId,_WA_Sys_00000002_54376389,true,false,2025-10-21 09:55:41.047
+dbo,PilotMedicalCertificate,PilotId,PK_PilotMedicalCertificate,false,false,2023-08-30 23:36:23.297
+dbo,ProfileDocumentation,_RowId,PK_ProfileDocumentation,false,false,2023-08-24 23:23:27.667
+dbo,ProfileDocumentation,_RowId,UK_ProfileDocumentation_ProfileDocumentationId,false,false,
+dbo,ProfileDocumentation,CompanyId,UK_ProfileDocumentation_CompanyIdProfileDocumentationTypeId,false,false,2025-10-14 09:44:22.937
+dbo,ProfileDocumentation,DocumentationTypeId,UK_ProfileDocumentation_CompanyIdProfileDocumentationTypeId,false,false,2025-10-14 09:44:22.937
+dbo,ProfileDocumentationExpiration,_RowId,PK_ProfileDocumentationExpiration,false,false,2023-08-30 23:33:28.463
+dbo,ProfileDocumentationExpiration,OperatorId,IDX_ProfileDocumentationExpiration_OperatorIdUserId,false,false,2025-10-21 09:52:13.703
+dbo,ProfileDocumentationExpiration,ProfileDocumentationExpirationId,IDX_ProfileDocumentationExpiration_ProfileDocumentationExpirationId,false,false,
+dbo,ProfileDocumentationExpiration,UserId,IDX_ProfileDocumentationExpiration_OperatorIdUserId,false,false,2025-10-21 09:52:13.703
+dbo,QBDAccounts,_RowNumber,PK_QBDAccounts,false,false,
+dbo,QBDCustomers,_RowNumber,PK_QBDCustomers,false,false,
+dbo,QBDPaymentMethods,_RowNumber,PK_QBDPaymentMethods,false,false,
+dbo,QBDProducts,_RowNumber,PK_QBDProducts,false,false,
+dbo,QBDSalesTaxes,_RowNumber,PK_QBDSalesTaxes,false,false,
+dbo,QBDTaxReferences,_RowNumber,PK_QBDTaxReferences,false,false,
+dbo,QuickFilters,CompanyId,UK_QuickFilters_CompanyId_UserId,false,false,
+dbo,QuickFilters,RowId,PK_QuickFilters,false,false,
+dbo,QuickFilters,UserId,UK_QuickFilters_CompanyId_UserId,false,false,
+dbo,RemovedReservationTrainingSessions,_RowNumber,PK_RemovedReservationTrainingSessions,false,false,2023-08-30 23:21:04.363
+dbo,RemovedReservationTrainingSessions,OperatorId,_WA_Sys_00000003_6E765879,true,false,2025-10-21 09:53:06.493
+dbo,ReservationInvoices,_RowNumber,PK_ReservationInvoices,false,false,2023-08-30 23:19:13.443
+dbo,ReservationInvoices,OperatorId,_WA_Sys_00000003_1F198FD4,true,false,2025-10-21 09:53:18.833
+dbo,ReservationInvoices,ReservationId,dbo.IDX_ReservationInvoices_ReservationId,false,false,
+dbo,ReservationTrainingSessions,_RowNumber,PK_ReservationTrainingSessions,false,false,2023-08-30 23:19:49.933
+dbo,ReservationTrainingSessions,OperatorId,dbo.IDX_ReservationTrainingSessions_ReservationIdOperatorId,false,false,
+dbo,ReservationTrainingSessions,OperatorId,_WA_Sys_00000003_084B3915,true,false,2025-10-21 09:53:30.833
+dbo,ReservationTrainingSessions,ReservationId,dbo.IDX_ReservationTrainingSessions_ReservationIdOperatorId,false,false,
+dbo,ReservationTypeCustomProfileDocumentationChecks,_RowId,PK_ReservationTypeCustomProfileDocumentationChecks,false,false,2023-09-14 23:16:49.313
+dbo,ReservationTypeCustomProfileDocumentationChecks,ActivityRole,UK_ReservationTypeCustomProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleCustomProfileDocumentation,false,false,
+dbo,ReservationTypeCustomProfileDocumentationChecks,CompanyId,_WA_Sys_00000003_7C8F6DA6,true,false,2025-10-21 09:51:42.957
+dbo,ReservationTypeCustomProfileDocumentationChecks,CompanyId,UK_ReservationTypeCustomProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleCustomProfileDocumentation,false,false,
+dbo,ReservationTypeCustomProfileDocumentationChecks,CustomProfileDocumentationId,UK_ReservationTypeCustomProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleCustomProfileDocumentation,false,false,
+dbo,ReservationTypeCustomProfileDocumentationChecks,ReservationTypeId,UK_ReservationTypeCustomProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleCustomProfileDocumentation,false,false,
+dbo,ReservationTypeInstructionTypes,_RowNumber,PK_ReservationTypeInstructionTypes,false,false,2023-08-30 23:45:05.607
+dbo,ReservationTypeInstructionTypes,OperatorId,ix_OperatorId,false,false,2025-10-21 09:56:06.610
+dbo,ReservationTypePilotCurrencyReminderChecks,_RowId,PK_ReservationTypePilotCurrencyReminderChecks,false,false,
+dbo,ReservationTypePilotCurrencyReminderChecks,ActivityRole,UK_ReservationTypePilotCurrencyReminderChecks_ReservationTypeIdCompanyIdActivityRolePilotCurrencyId,false,false,
+dbo,ReservationTypePilotCurrencyReminderChecks,CompanyId,UK_ReservationTypePilotCurrencyReminderChecks_ReservationTypeIdCompanyIdActivityRolePilotCurrencyId,false,false,
+dbo,ReservationTypePilotCurrencyReminderChecks,PilotCurrencyId,UK_ReservationTypePilotCurrencyReminderChecks_ReservationTypeIdCompanyIdActivityRolePilotCurrencyId,false,false,
+dbo,ReservationTypePilotCurrencyReminderChecks,ReservationTypeId,UK_ReservationTypePilotCurrencyReminderChecks_ReservationTypeIdCompanyIdActivityRolePilotCurrencyId,false,false,
+dbo,ReservationTypeProfileDocumentationChecks,_RowId,PK_ReservationTypeProfileDocumentationChecks,false,false,2023-08-30 23:38:44.367
+dbo,ReservationTypeProfileDocumentationChecks,ActivityRole,UK_ReservationTypeProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleDocumentationTypeId,false,false,
+dbo,ReservationTypeProfileDocumentationChecks,CompanyId,_WA_Sys_00000003_2A563856,true,false,2025-10-21 09:53:58.170
+dbo,ReservationTypeProfileDocumentationChecks,CompanyId,UK_ReservationTypeProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleDocumentationTypeId,false,false,
+dbo,ReservationTypeProfileDocumentationChecks,DocumentationTypeId,UK_ReservationTypeProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleDocumentationTypeId,false,false,
+dbo,ReservationTypeProfileDocumentationChecks,ReservationTypeId,UK_ReservationTypeProfileDocumentationChecks_ReservationTypeIdCompanyIdActivityRoleDocumentationTypeId,false,false,
+dbo,ReservationTypeRoleJoiner,_RowId,PK_ReservationTypeRoleJoiner,false,false,2023-08-30 23:38:45.070
+dbo,ReservationTypeRoleJoiner,CompanyId,_WA_Sys_00000002_3B80C458,true,false,2025-10-21 09:56:59.593
+dbo,ReservationTypeRoleJoiner,ReservationTypeId,UK_ReservationTypeRoleJoiner_ReservationTypeIdRoleId,false,false,
+dbo,ReservationTypeRoleJoiner,RoleId,UK_ReservationTypeRoleJoiner_ReservationTypeIdRoleId,false,false,
+dbo,SalesTransactionLineItems,_RowNumber,PK_SalesTransactionLineItems,false,false,2024-12-05 15:32:00.103
+dbo,SalesTransactionLineItems,InvoiceId,ix_OperatorId_InvoiceId_Includes,false,false,2025-10-21 09:54:17.433
+dbo,SalesTransactionLineItems,InvoiceId,_WA_Sys_00000023_14B10FFA,true,false,2024-12-05 15:31:49.640
+dbo,SalesTransactionLineItems,LineItemId,UK_SalesTransactionLineItems,false,false,2024-12-05 15:32:00.167
+dbo,SalesTransactionLineItems,OperatorId,UK_SalesTransactionLineItems,false,false,2024-12-05 15:32:00.167
+dbo,SalesTransactionLineItems,OperatorId,ix_OperatorId_InvoiceId_Includes,false,false,2025-10-21 09:54:17.433
+dbo,SalesTransactionLineItems,ReturnAgainstSalesTransactionId,ix_ReturnAgainstSalesTransactionId_Includes,false,false,2024-12-05 15:32:00.217
+dbo,SalesTransactionLineItems,SalesTransactionId,IDX_SalesTransactionLineItems_SalesTransactionIdServiceTypeId_Quantity_ResourceId,false,false,2024-12-05 15:31:43.013
+dbo,SalesTransactionLineItems,SalesTransactionId,UK_SalesTransactionLineItems,false,false,2024-12-05 15:32:00.167
+dbo,SalesTransactionLineItems,ServiceTypeId,IDX_SalesTransactionLineItems_SalesTransactionIdServiceTypeId_Quantity_ResourceId,false,false,2024-12-05 15:31:43.013
+dbo,SalesTransactionLineItems,ServiceTypeId,IDX_SalesTransactionLineItems_ServiceTypeId_SalesTransactionIdQuantityResourceId,false,false,2024-12-05 15:32:01.980
+dbo,SalesTransactionLineItemsDeleted,_RowNumber,PK_SalesTransactionLineItemsDeleted,false,false,2023-08-30 23:44:24.953
+dbo,SalesTransactionLineItemsDeleted,LineItemId,UK_SalesTransactionLineItemsDeleted,false,false,2025-10-21 09:53:20.340
+dbo,SalesTransactionLineItemsDeleted,OperatorId,UK_SalesTransactionLineItemsDeleted,false,false,2025-10-21 09:53:20.340
+dbo,SalesTransactionLineItemsDeleted,SalesTransactionId,UK_SalesTransactionLineItemsDeleted,false,false,2025-10-21 09:53:20.340
+dbo,SalesTransactionPayments,_RowNumber,PK_SalesTransactionPayments,false,false,2023-08-30 23:28:40.083
+dbo,SalesTransactionPayments,OperatorId,ix_OperatorId_PaymentTypeId_PaymentDate_Includes,false,false,2025-10-21 09:53:46.730
+dbo,SalesTransactionPayments,OperatorId,IDX_SalesTransactionPayments_OperatorIdPaymentTypeIdSalesTransactionDate_SalesTransactionId,false,false,
+dbo,SalesTransactionPayments,OperatorId,UK_SalesTransactionPayments,false,false,
+dbo,SalesTransactionPayments,PaymentDate,ix_OperatorId_PaymentTypeId_PaymentDate_Includes,false,false,2025-10-21 09:53:46.730
+dbo,SalesTransactionPayments,PaymentId,UK_SalesTransactionPayments,false,false,
+dbo,SalesTransactionPayments,PaymentTypeId,IDX_SalesTransactionPayments_SalesTransactionIdPaymentTypeId,false,false,
+dbo,SalesTransactionPayments,PaymentTypeId,ix_OperatorId_PaymentTypeId_PaymentDate_Includes,false,false,2025-10-21 09:53:46.730
+dbo,SalesTransactionPayments,PaymentTypeId,IDX_SalesTransactionPayments_OperatorIdPaymentTypeIdSalesTransactionDate_SalesTransactionId,false,false,
+dbo,SalesTransactionPayments,SalesTransactionDate,IDX_SalesTransactionPayments_OperatorIdPaymentTypeIdSalesTransactionDate_SalesTransactionId,false,false,
+dbo,SalesTransactionPayments,SalesTransactionId,UK_SalesTransactionPayments,false,false,
+dbo,SalesTransactionPayments,SalesTransactionId,IDX_SalesTransactionPayments_SalesTransactionIdPaymentTypeId,false,false,
+dbo,SalesTransactionPaymentsDeleted,_RowNumber,PK_SalesTransactionPaymentsDeleted,false,false,2023-08-30 23:41:36.377
+dbo,SalesTransactionPaymentsDeleted,OperatorId,UK_SalesTransactionPaymentsDeleted,false,false,2025-10-21 09:58:11.340
+dbo,SalesTransactionPaymentsDeleted,PaymentId,UK_SalesTransactionPaymentsDeleted,false,false,2025-10-21 09:58:11.340
+dbo,SalesTransactionPaymentsDeleted,SalesTransactionId,UK_SalesTransactionPaymentsDeleted,false,false,2025-10-21 09:58:11.340
+dbo,SalesTransactionPaymentsStarted,_RowNumber,PK_SalesTransactionsPaymentsStarted,false,false,
+dbo,SalesTransactionPaymentsStarted,OperatorId,_WA_Sys_00000002_6F00685E,true,false,2025-09-13 09:54:10.510
+dbo,SalesTransactionPaymentsTowardInvoices,_RowNumber,PK_SalesTransactionPaymentsTowardInvoices,false,false,2023-08-30 23:38:02.050
+dbo,SalesTransactionPaymentsTowardInvoices,OperatorId,_WA_Sys_00000002_04EFA97D,true,false,2025-10-21 09:57:41.933
+dbo,SalesTransactions,_RowNumber,PK_SalesTransactions,false,false,2024-12-05 15:31:45.097
+dbo,SalesTransactions,AircraftId,_WA_Sys_00000015_0D0FEE32,true,false,2024-12-05 15:31:40.380
+dbo,SalesTransactions,CreatedAt,_WA_Sys_00000030_0D0FEE32,true,false,2024-12-05 15:31:44.013
+dbo,SalesTransactions,CreatedAt,ix_OperatorId_CreatedAt,false,false,2024-12-05 15:31:43.050
+dbo,SalesTransactions,LocationId,_WA_Sys_0000000B_0D0FEE32,true,false,2024-12-05 15:31:22.357
+dbo,SalesTransactions,OperatorId,UK_SalesTransactions,false,false,2024-12-05 15:31:44.050
+dbo,SalesTransactions,OperatorId,IDX_SalesTransactions_OperatorIdStatus_CustomerUserId,false,false,2024-12-05 15:31:44.087
+dbo,SalesTransactions,OperatorId,dbo.IDX_SalesTransactions_OperatorId_TransactionIdNumberTypeStatusDuePaidDateUserIdReturnIdReturned,false,false,2025-10-21 09:55:20.533
+dbo,SalesTransactions,OperatorId,ix_OperatorId_CreatedAt,false,false,2024-12-05 15:31:43.050
+dbo,SalesTransactions,ReservationId,_WA_Sys_0000001B_0D0FEE32,true,false,2024-12-05 15:31:22.397
+dbo,SalesTransactions,SalesTransactionId,IDX_SalesTransactions_SalesTransactionId_RowNumberTotalDueTransactionNumber,false,false,2024-12-05 15:31:41.030
+dbo,SalesTransactions,SalesTransactionId,UK_SalesTransactions,false,false,2024-12-05 15:31:44.050
+dbo,SalesTransactions,Status,IDX_SalesTransactions_OperatorIdStatus_CustomerUserId,false,false,2024-12-05 15:31:44.087
+dbo,SalesTransactions,Status,IDX_SalesTransactions_Status_SalesTransactionIdReturnInvoiceId,false,false,2024-12-05 15:31:45.060
+dbo,SalesTransactionsDeleted,_RowNumber,PK_SalesTransactionsDeleted,false,false,2023-08-30 23:46:50.863
+dbo,SalesTransactionsDeleted,OperatorId,UK_SalesTransactionsDeleted,false,false,2025-10-21 09:57:17.323
+dbo,SalesTransactionsDeleted,SalesTransactionId,UK_SalesTransactionsDeleted,false,false,2025-10-21 09:57:17.323
+dbo,SalesTransactionSeeds,_RowNumber,PK_SalesTransactionSeeds,false,false,2023-08-30 23:36:26.580
+dbo,SalesTransactionSeeds,OperatorId,UK_SalesTransactionSeeds,false,false,2025-10-21 09:52:37.117
+dbo,SalesTransactionSeeds,SalesTransactionId,UK_SalesTransactionSeeds,false,false,2025-10-21 09:52:37.117
+dbo,ScheduleAvailabilities,AvailabilityId,PK_ScheduleAvailabilities,false,false,
+dbo,ScheduleAvailabilities,OperatorId,_WA_Sys_00000003_66E023A9,true,false,2025-10-21 09:54:24.867
+dbo,ScheduleAvailabilityOverrides,OperatorId,_WA_Sys_00000003_6AB0B48D,true,false,2025-10-21 09:52:54.193
+dbo,ScheduleAvailabilityOverrides,OverrideId,PK_ScheduleStudentTimeOffOn,false,false,
+dbo,SchedulingGroups,_RowNumber,PK_SchedulingGroups,false,false,2023-09-04 23:24:43.820
+dbo,SchedulingGroups,OperatorId,UK_SchedulingGroups_OperatorId_SchedulingGroupId,false,false,2025-10-21 09:52:31.673
+dbo,SchedulingGroups,SchedulingGroupId,UK_SchedulingGroups_OperatorId_SchedulingGroupId,false,false,2025-10-21 09:52:31.673
+dbo,Stages,_RowId,PK_Stages,false,false,2023-08-30 23:01:30.643
+dbo,Stages,CourseId,_WA_Sys_00000003_5649C92D,true,false,2024-12-05 17:28:56.323
+dbo,Stages,CourseId,nci_wi_Stages_C68E9FC2C0420442E120FBD6DFCDF3D4,false,false,2025-03-12 21:13:10.313
+dbo,Stages,OperatorId,nci_wi_Stages_C68E9FC2C0420442E120FBD6DFCDF3D4,false,false,2025-03-12 21:13:10.313
+dbo,Stages,OperatorId,_WA_Sys_00000004_5649C92D,true,false,2025-10-21 12:09:03.710
+dbo,Stages,StageId,UK_Stages_StageId,false,false,2024-12-05 17:28:56.400
+dbo,StageTrackedTimeFields,_RowId,PK_StageTrackedTimeFields,false,false,2023-08-30 23:01:33.370
+dbo,StageTrackedTimeFields,CourseId,nci_wi_StageTrackedTimeFields_AE07CC2ECA688C278F207C8E8F672BCA,false,false,2025-03-12 21:13:10.150
+dbo,StageTrackedTimeFields,FieldId,nci_wi_StageTrackedTimeFields_AE07CC2ECA688C278F207C8E8F672BCA,false,false,2025-03-12 21:13:10.150
+dbo,StageTrackedTimeFields,OperatorId,nci_wi_StageTrackedTimeFields_AE07CC2ECA688C278F207C8E8F672BCA,false,false,2025-03-12 21:13:10.150
+dbo,StageTrackedTimeFields,OperatorId,_WA_Sys_00000004_113584D1,true,false,2025-10-21 12:08:52.987
+dbo,StageTrackedTimeFields,StageId,nci_wi_StageTrackedTimeFields_AE07CC2ECA688C278F207C8E8F672BCA,false,false,2025-03-12 21:13:10.150
+dbo,StudentLessonCustomTaskGrades,_RowId,PK_StudentLessonCustomTaskGrades,false,false,2023-09-11 23:01:11.337
+dbo,StudentLessonCustomTaskGrades,CustomLessonTaskId,UK_StudentLessonCustomTaskGrades_EnrollmentIdLessonIdCustomLessonTaskId,false,false,
+dbo,StudentLessonCustomTaskGrades,CustomLessonTaskId,nci_wi_StudentLessonCustomTaskGrades_21DBB4EE872D315B722ECD0CD91582D8,false,false,2025-03-12 21:13:10.480
+dbo,StudentLessonCustomTaskGrades,EnrollmentId,UK_StudentLessonCustomTaskGrades_EnrollmentIdLessonIdCustomLessonTaskId,false,false,
+dbo,StudentLessonCustomTaskGrades,LessonId,UK_StudentLessonCustomTaskGrades_EnrollmentIdLessonIdCustomLessonTaskId,false,false,
+dbo,StudentLessonCustomTaskGrades,OperatorId,_WA_Sys_00000002_1ABEEF0B,true,false,2025-10-21 12:08:57.680
+dbo,StudentLessonCustomTaskGrades,OperatorId,nci_wi_StudentLessonCustomTaskGrades_21DBB4EE872D315B722ECD0CD91582D8,false,false,2025-03-12 21:13:10.480
+dbo,StudentLessons,_RowId,PK_StudentLessons,false,false,2023-08-30 23:01:27.713
+dbo,StudentLessons,CourseId,nci_wi_StudentLessons_B4CA8E7CFF95DDBBA8E9A839542B11C8,false,false,2023-05-25 16:37:34.343
+dbo,StudentLessons,CourseId,ix_StudentLessons_OperatorId_CourseId_StudentId_LessonsStatus,false,false,2025-10-21 12:09:57.997
+dbo,StudentLessons,EnrollmentId,_WA_Sys_00000006_253C7D7E,true,false,2023-05-25 16:37:34.030
+dbo,StudentLessons,EnrollmentId,nci_wi_StudentLessons_B4CA8E7CFF95DDBBA8E9A839542B11C8,false,false,2023-05-25 16:37:34.343
+dbo,StudentLessons,EnrollmentId,UK_StudentLessons_LessonIdEnrollmentId,false,false,2023-05-25 16:37:34.357
+dbo,StudentLessons,LessonId,UK_StudentLessons_LessonIdEnrollmentId,false,false,2023-05-25 16:37:34.357
+dbo,StudentLessons,LessonStatus,nci_wi_StudentLessons_B4CA8E7CFF95DDBBA8E9A839542B11C8,false,false,2023-05-25 16:37:34.343
+dbo,StudentLessons,LessonStatus,ix_StudentLessons_OperatorId_CourseId_StudentId_LessonsStatus,false,false,2025-10-21 12:09:57.997
+dbo,StudentLessons,OperatorId,ix_StudentLessons_OperatorId_CourseId_StudentId_LessonsStatus,false,false,2025-10-21 12:09:57.997
+dbo,StudentLessons,OperatorId,_WA_Sys_00000002_253C7D7E,true,false,2025-03-12 09:10:56.580
+dbo,StudentLessons,OperatorId,nci_wi_StudentLessons_B4CA8E7CFF95DDBBA8E9A839542B11C8,false,false,2023-05-25 16:37:34.343
+dbo,StudentLessons,StudentId,ix_StudentLessons_OperatorId_CourseId_StudentId_LessonsStatus,false,false,2025-10-21 12:09:57.997
+dbo,StudentLessonsPreviousCredits,_RowId,PK_StudentLessonsPreviousCredit,false,false,2023-08-31 23:01:00.137
+dbo,StudentLessonsPreviousCredits,CourseId,_WA_Sys_00000003_2EC5E7B8,true,false,2023-05-25 16:53:14.363
+dbo,StudentLessonsPreviousCredits,CourseId,nci_wi_StudentLessonsPreviousCredits_0965FBB2B33F474C16096223F8D7F42B,false,false,2023-05-25 16:54:07.920
+dbo,StudentLessonsPreviousCredits,EnrollmentId,nci_wi_StudentLessonsPreviousCredits_0965FBB2B33F474C16096223F8D7F42B,false,false,2023-05-25 16:54:07.920
+dbo,StudentLessonsPreviousCredits,LessonId,nci_wi_StudentLessonsPreviousCredits_0965FBB2B33F474C16096223F8D7F42B,false,false,2023-05-25 16:54:07.920
+dbo,StudentLessonsPreviousCredits,OperatorId,nci_wi_StudentLessonsPreviousCredits_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-03-12 21:19:17.477
+dbo,StudentLessonsPreviousCredits,OperatorId,nci_wi_StudentLessonsPreviousCredits_0965FBB2B33F474C16096223F8D7F42B,false,false,2023-05-25 16:54:07.920
+dbo,StudentLessonsPreviousCredits,OperatorId,_WA_Sys_00000002_2EC5E7B8,true,false,2025-10-04 12:07:19.600
+dbo,StudentLessonsPreviousCredits,StudentId,nci_wi_StudentLessonsPreviousCredits_0965FBB2B33F474C16096223F8D7F42B,false,false,2023-05-25 16:54:07.920
+dbo,StudentLessonsPreviousCredits,TrainingSessionId,nci_wi_StudentLessonsPreviousCredits_B1E38BF7C36A4C2CA97ADECFF1E02B22,false,false,2025-03-12 21:19:17.477
+dbo,StudentLessonTaskGrades,_RowId,PK_StudentLessonTaskGrades,false,false,2023-08-30 23:01:52.557
+dbo,StudentLessonTaskGrades,CourseId,ix_StudentLessonTaskGrades_OperatorId_CourseId_LessonId_StudentId_EnrollmentId,false,false,2025-10-21 12:10:10.180
+dbo,StudentLessonTaskGrades,CourseId,nci_wi_StudentLessonTaskGrades_B5494E4FEF258B22B6816F86F338E0EF,false,false,2025-03-12 21:19:16.940
+dbo,StudentLessonTaskGrades,EnrollmentId,ix_StudentLessonTaskGrades_OperatorId_CourseId_LessonId_StudentId_EnrollmentId,false,false,2025-10-21 12:10:10.180
+dbo,StudentLessonTaskGrades,EnrollmentId,nci_wi_StudentLessonTaskGrades_B5494E4FEF258B22B6816F86F338E0EF,false,false,2025-03-12 21:19:16.940
+dbo,StudentLessonTaskGrades,EnrollmentId,UK_StudentLessonTaskGrades_EnrollmentIdLessonIdLessonTaskId,false,false,
+dbo,StudentLessonTaskGrades,LessonId,UK_StudentLessonTaskGrades_EnrollmentIdLessonIdLessonTaskId,false,false,
+dbo,StudentLessonTaskGrades,LessonId,ix_StudentLessonTaskGrades_OperatorId_CourseId_LessonId_StudentId_EnrollmentId,false,false,2025-10-21 12:10:10.180
+dbo,StudentLessonTaskGrades,LessonId,nci_wi_StudentLessonTaskGrades_B5494E4FEF258B22B6816F86F338E0EF,false,false,2025-03-12 21:19:16.940
+dbo,StudentLessonTaskGrades,LessonTaskId,UK_StudentLessonTaskGrades_EnrollmentIdLessonIdLessonTaskId,false,false,
+dbo,StudentLessonTaskGrades,OperatorId,_WA_Sys_00000002_3E082B48,true,false,2025-03-12 09:11:21.850
+dbo,StudentLessonTaskGrades,OperatorId,ix_StudentLessonTaskGrades_OperatorId_CourseId_LessonId_StudentId_EnrollmentId,false,false,2025-10-21 12:10:10.180
+dbo,StudentLessonTaskGrades,OperatorId,nci_wi_StudentLessonTaskGrades_B5494E4FEF258B22B6816F86F338E0EF,false,false,2025-03-12 21:19:16.940
+dbo,StudentLessonTaskGrades,StudentId,nci_wi_StudentLessonTaskGrades_B5494E4FEF258B22B6816F86F338E0EF,false,false,2025-03-12 21:19:16.940
+dbo,StudentLessonTaskGrades,StudentId,ix_StudentLessonTaskGrades_OperatorId_CourseId_LessonId_StudentId_EnrollmentId,false,false,2025-10-21 12:10:10.180
+dbo,StudentProgressDetails,_RowId,PK_StudentProgressDetails,false,false,2023-08-30 23:02:02.983
+dbo,StudentProgressDetails,CourseId,_WA_Sys_00000004_7E0DA1C4,true,false,2024-11-05 20:57:12.250
+dbo,StudentProgressDetails,EnrollmentId,nci_wi_StudentProgressDetails_E59E28FD8F16D86FEDF0629E51D00702,false,false,2025-03-12 21:19:58.393
+dbo,StudentProgressDetails,EnrollmentId,_WA_Sys_00000006_7E0DA1C4,true,false,2025-03-12 21:19:25.460
+dbo,StudentProgressDetails,OperatorId,nci_wi_StudentProgressDetails_E59E28FD8F16D86FEDF0629E51D00702,false,false,2025-03-12 21:19:58.393
+dbo,StudentProgressDetails,OperatorId,_WA_Sys_00000003_7E0DA1C4,true,false,2025-10-21 12:10:14.050
+dbo,StudentProgressDetails,OverallProgressStatus,_WA_Sys_00000025_7E0DA1C4,true,false,2024-11-04 16:05:08.950
+dbo,StudentProgressDetails,StudentId,_WA_Sys_00000005_7E0DA1C4,true,false,2024-11-06 17:10:15.207
+dbo,TaskGrades,_RowId,PK_TaskGrades,false,false,2023-08-30 23:01:41.250
+dbo,TaskGrades,CourseId,nci_wi_TaskGrades_9C4931EF954E578E4A06506121827A9D,false,false,2025-10-21 12:08:55.133
+dbo,TaskGrades,DefaultLowestPassingGrade,nci_wi_TaskGrades_9C4931EF954E578E4A06506121827A9D,false,false,2025-10-21 12:08:55.133
+dbo,TaskGrades,OperatorId,nci_wi_TaskGrades_9C4931EF954E578E4A06506121827A9D,false,false,2025-10-21 12:08:55.133
+dbo,TaskGrades,TaskGradeId,UK_TaskGrades_TaskGradeId,false,false,
+dbo,TaskGrades,TaskGradeScaleId,nci_wi_TaskGrades_9C4931EF954E578E4A06506121827A9D,false,false,2025-10-21 12:08:55.133
+dbo,TaskGradeScales,_RowId,PK_TaskGradeScales,false,false,2023-08-30 23:01:37.730
+dbo,TaskGradeScales,CourseId,UK_TaskGradeScales_CourseId_Name,false,false,
+dbo,TaskGradeScales,Name,UK_TaskGradeScales_CourseId_Name,false,false,
+dbo,TaskGradeScales,OperatorId,_WA_Sys_00000003_5C8CB268,true,false,2025-10-21 12:08:49.250
+dbo,TaskGradeScales,TaskGradeScaleId,UK_TaskGradeScales_TaskGradeScaleId,false,false,
+dbo,TaxReferences,_RowNumber,PK_TaxReferences,false,false,
+dbo,tblAddress,AddressId,PK_tblAddress,false,false,2023-08-30 23:08:49.637
+dbo,tblAddress,OperatorId,_WA_Sys_00000004_1F2E9E6D,true,false,2025-10-21 09:51:12.593
+dbo,tblAddressFormat,CountryId,PK_tblAddressFormat,false,false,
+dbo,tblAddressParts,AddressId,IDX_tblAddressParts_AddressId,false,false,
+dbo,tblAddressParts,AddressPartId,PK_tblAddressParts,false,false,2023-08-30 23:08:42.080
+dbo,tblAddressParts,OperatorId,_WA_Sys_00000006_22FF2F51,true,false,2025-10-21 09:51:12.440
+dbo,tblAddressPartsType,AddressPartsTypeId,PK_tblAddressPartsType,false,false,
+dbo,tblAircraft,Active,IDX_tblAircraft_ActiveIsDeletedAircraftIdCompanyIdLocationId,false,false,2025-10-08 21:50:04.017
+dbo,tblAircraft,Active,IDX_tblAircraft_CompanyIdActiveIsDeleted_AircraftIdLocationId,false,false,2025-10-20 09:45:53.400
+dbo,tblAircraft,AircraftId,PK_tblAircraft,false,false,2025-10-08 21:50:00.277
+dbo,tblAircraft,AircraftMakeId,_WA_Sys_00000003_37D02F05,true,false,2025-10-08 21:50:01.020
+dbo,tblAircraft,AircraftModelId,_WA_Sys_00000004_37D02F05,true,false,2025-10-08 21:50:01.750
+dbo,tblAircraft,AirframeCycles,_WA_Sys_0000004E_37D02F05,true,false,2024-10-30 18:43:34.520
+dbo,tblAircraft,BillingMeter,IDX_tblAircraft_CompanyIdBillingMeter,false,false,2025-10-07 09:44:14.417
+dbo,tblAircraft,CategoryClass,_WA_Sys_00000032_37D02F05,true,false,2025-10-08 21:50:06.097
+dbo,tblAircraft,Class,_WA_Sys_00000006_37D02F05,true,false,2025-02-10 21:21:38.470
+dbo,tblAircraft,CompanyId,IDX_tblAircraft_CompanyIdActiveIsDeleted_AircraftIdLocationId,false,false,2025-10-20 09:45:53.400
+dbo,tblAircraft,CompanyId,IDX_tblAircraft_CompanyIdBillingMeter,false,false,2025-10-07 09:44:14.417
+dbo,tblAircraft,IsDeleted,IDX_tblAircraft_CompanyIdActiveIsDeleted_AircraftIdLocationId,false,false,2025-10-20 09:45:53.400
+dbo,tblAircraft,IsDeleted,IDX_tblAircraft_ActiveIsDeletedAircraftIdCompanyIdLocationId,false,false,2025-10-08 21:50:04.017
+dbo,tblAircraft,TailNumber,_WA_Sys_00000005_37D02F05,true,false,2024-12-06 15:22:00.257
+dbo,tblAircraft_AircraftGroupJoiner,AircraftGroupId,PK_tblAircraft_AircraftGroupJoiner,false,false,
+dbo,tblAircraft_AircraftGroupJoiner,AircraftId,PK_tblAircraft_AircraftGroupJoiner,false,false,
+dbo,tblAircraftCategoryJoiner,AircraftId,PK_tblAircraftCategoryJoiner,false,false,
+dbo,tblAircraftCategoryJoiner,CategoryId,PK_tblAircraftCategoryJoiner,false,false,
+dbo,tblAircraftDescriptions,AircraftId,PK_tblAircraftDescriptions,false,false,
+dbo,tblAircraftEngineJoiner,AircraftId,PK_tblAircraftEngineJoiner,false,false,2023-09-11 23:09:54.187
+dbo,tblAircraftEngineJoiner,EngineCount,PK_tblAircraftEngineJoiner,false,false,2023-09-11 23:09:54.187
+dbo,tblAircraftEngineJoiner,EngineCount,_WA_Sys_00000003_5F1F0650,true,false,2023-09-11 23:09:54.193
+dbo,tblAircraftEngineJoiner,EngineId,_WA_Sys_00000002_5F1F0650,true,false,2023-09-11 23:09:54.227
+dbo,tblAircraftEngineJoiner,EngineId,PK_tblAircraftEngineJoiner,false,false,2023-09-11 23:09:54.187
+dbo,tblAircraftEngineJoiner,OperatorId,_WA_Sys_00000005_5F1F0650,true,false,2025-10-21 09:51:21.593
+dbo,tblAircraftGroups,AircraftGroupId,PK_tblAircraftGroups,false,false,
+dbo,tblAircraftImages,AircraftId,PK_tblAircraftImages,false,false,
+dbo,tblAircraftMakes,AircraftMake,_WA_Sys_00000003_166F3B3A,true,false,2025-10-08 21:50:00.270
+dbo,tblAircraftMakes,AircraftMakeId,PK_tblAircraftMakes,false,false,2025-10-08 21:49:59.517
+dbo,tblAircraftMakes,CompanyId,IDX_tblAircraftMakes_CompanyId,false,false,2025-10-03 09:44:13.643
+dbo,tblAircraftModels,AircraftModel,_WA_Sys_00000003_24BD5A91,true,false,2025-10-08 21:50:01.010
+dbo,tblAircraftModels,AircraftModelId,PK_tblAircraftModels,false,false,2025-10-08 21:49:59.517
+dbo,tblAircraftModels,CompanyId,IDX_tblAircraftModels_CompanyId_AircraftModelIdAircraftModel,false,false,2025-10-20 09:46:11.677
+dbo,tblAircraftRatingsCertsEndorsements,AircraftId,PK_tblAircraftRatingsCertsEndorsements,false,false,
+dbo,tblAircraftTach,AircraftId,PK_tblAircraftTach,false,false,
+dbo,tblAircraftTach,TachCount,PK_tblAircraftTach,false,false,
+dbo,tblAircraftTypeCheckOuts,AircraftMakeId,PK_tblAircraftTypeCheckOuts,false,false,2023-08-30 23:11:19.673
+dbo,tblAircraftTypeCheckOuts,AircraftMakeId,_WA_Sys_00000002_1A0AC1F4,true,false,2023-08-30 23:11:19.680
+dbo,tblAircraftTypeCheckOuts,AircraftModelId,_WA_Sys_00000003_1A0AC1F4,true,false,2023-08-30 23:11:19.683
+dbo,tblAircraftTypeCheckOuts,AircraftModelId,PK_tblAircraftTypeCheckOuts,false,false,2023-08-30 23:11:19.673
+dbo,tblAircraftTypeCheckOuts,CompanyId,_WA_Sys_00000006_1A0AC1F4,true,false,2025-10-21 09:51:11.223
+dbo,tblAircraftTypeCheckOuts,PilotId,PK_tblAircraftTypeCheckOuts,false,false,2023-08-30 23:11:19.673
+dbo,tblAuditEvents,CompanyId,IDX_tblAuditEvents_CompanyIdId,false,false,2025-10-21 09:51:36.433
+dbo,tblAuditEvents,EventId,PK_tblAuditEvents,false,false,2023-08-30 23:13:15.603
+dbo,tblAuditEvents,Id,IDX_tblAuditEvents_CompanyIdId,false,false,2025-10-21 09:51:36.433
+dbo,tblAuditEventTypes,EventTypeId,PK_tblAuditEventTypes,false,false,
+dbo,tblAustraliaStates,Abbreviation,PK_tblAustraliaStates,false,false,
+dbo,tblCompany,Id,PK_tblCompany,false,false,2025-06-22 09:27:57.960
+dbo,tblCompanyAddressJoiner,AddressTypeId,PK_tblCompanyAddressJoiner,false,false,2025-06-22 09:28:59.320
+dbo,tblCompanyAddressJoiner,AddressTypeId,_WA_Sys_00000002_26CFC035,true,false,2023-07-13 23:03:29.020
+dbo,tblCompanyAddressJoiner,CompanyId,PK_tblCompanyAddressJoiner,false,false,2025-06-22 09:28:59.320
+dbo,tblCompanyBusinessTypeJoiner,BusinessTypeId,PK_tblCompanyBusinessTypeJoiner,false,false,2025-06-22 09:30:44.893
+dbo,tblCompanyBusinessTypeJoiner,BusinessTypeId,_WA_Sys_00000002_4B973090,true,false,2023-07-13 23:03:20.237
+dbo,tblCompanyBusinessTypeJoiner,CompanyId,PK_tblCompanyBusinessTypeJoiner,false,false,2025-06-22 09:30:44.893
+dbo,tblCompanyEmailHeaderImages,Id,PK_tblCompanyEmailHeaderImages,false,false,
+dbo,tblCompanyEmailJoiner,CompanyId,PK_tblCompanyEmailJoiner,false,false,
+dbo,tblCompanyEmailJoiner,EmailId,PK_tblCompanyEmailJoiner,false,false,
+dbo,tblCompanyEmailJoiner,EmailTypeId,PK_tblCompanyEmailJoiner,false,false,
+dbo,tblCompanyGatewayHeaders,id,PK_tblCompanyGatewayHeaders,false,false,
+dbo,tblCompanyLogos,Id,PK_tblCompanyLogos,false,false,
+dbo,tblContactNumbers,Id,PK_tblContactNumbers,false,false,2023-08-30 23:27:57.063
+dbo,tblContactNumbers,OperatorId,_WA_Sys_00000006_7D98A078,true,false,2025-10-21 09:57:08.970
+dbo,tblContactNumberTypes,Id,PK_tblContactNumberTypes,false,false,
+dbo,tblCountries,Id,PK_Countries,false,false,
+dbo,tblCustomerTerms,Id,PK_tblCustomerTerms,false,false,
+dbo,tblCustomResourceType,CustomResourceTypeId,PK_tblCustomResourceType,false,false,
+dbo,tblCustomScheduleViews,CompanyId,ix_tblCustomScheduleViews_CompanyId_PersonId,false,false,2025-10-21 09:53:03.497
+dbo,tblCustomScheduleViews,Id,PK_tblCustomScheduleViews,false,false,2023-08-30 23:40:17.780
+dbo,tblCustomScheduleViews,PersonId,ix_tblCustomScheduleViews_CompanyId_PersonId,false,false,2025-10-21 09:53:03.497
+dbo,tblDispatchPilots,DispatchId,PK_tblDispatchPilots,false,false,
+dbo,tblDispatchPilots,PilotId,PK_tblDispatchPilots,false,false,
+dbo,tblDispatchRecords,DepartDate,IX_tblDispatchRecordsFields,false,false,
+dbo,tblDispatchRecords,DispatchNumber,IX_tblDispatchRecordsClustered,false,false,
+dbo,tblDispatchRecords,Id,PK_tblDispatchRecords,false,false,
+dbo,tblDispatchRecords,ReturnDate,IX_tblDispatchRecordsFields,false,false,
+dbo,tblDispatchResources,DispatchId,PK_tblDispatchResources,false,false,
+dbo,tblDispatchResources,ItemId,PK_tblDispatchResources,false,false,
+dbo,tblEmailAddresses,Id,PK_tblEmailAddresses,false,false,2023-08-30 23:36:36.367
+dbo,tblEmailAddresses,IsConfirmed,IsConfirmed,false,false,
+dbo,tblEmailAddresses,IsPrimary,IsPrimary,false,false,
+dbo,tblEmailAddresses,OperatorId,_WA_Sys_00000008_581D0306,true,false,2025-10-21 09:52:41.067
+dbo,tblEmailTypes,Id,PK_tblEmailTypes,false,false,
+dbo,tblEngine,CompanyId,_WA_Sys_00000002_4830B400,true,false,2025-10-20 09:49:27.687
+dbo,tblEngine,EngineId,PK_tblEngine,false,false,2023-08-30 23:38:06.310
+dbo,tblEnginePropellerJoiner,EngineId,PK_tblEnginePropellerJoiner,false,false,2023-08-31 23:09:58.180
+dbo,tblEnginePropellerJoiner,OperatorId,_WA_Sys_00000004_51BA1E3A,true,false,2025-10-21 09:51:11.193
+dbo,tblEnginePropellerJoiner,PropellerId,_WA_Sys_00000002_51BA1E3A,true,false,2023-08-31 23:09:58.187
+dbo,tblEnginePropellerJoiner,PropellerId,PK_tblEnginePropellerJoiner,false,false,2023-08-31 23:09:58.180
+dbo,tblFlightEquipment,CompanyId,ix_CompanyId_IsActive_IsDeleted_LocationId,false,false,2025-10-21 09:51:14.150
+dbo,tblFlightEquipment,EquipmentId,PK_tblFlightEquipment,false,false,2023-07-13 23:02:02.237
+dbo,tblFlightEquipment,IsActive,ix_CompanyId_IsActive_IsDeleted_LocationId,false,false,2025-10-21 09:51:14.150
+dbo,tblFlightEquipment,IsDeleted,ix_CompanyId_IsActive_IsDeleted_LocationId,false,false,2025-10-21 09:51:14.150
+dbo,tblFlightEquipment,LocationId,ix_CompanyId_IsActive_IsDeleted_LocationId,false,false,2025-10-21 09:51:14.150
+dbo,tblFlightInstructor,CompanyId,IDX_tblFlightInstructor_CompanyIdIsActiveIsDeleted,false,false,2025-10-21 09:51:18.240
+dbo,tblFlightInstructor,CompanyId,ix_CompanyId_IsDeleted,false,false,2024-12-06 13:47:05.977
+dbo,tblFlightInstructor,InstructorId,PK_tblFlightInstructors,false,false,2023-08-30 23:12:56.247
+dbo,tblFlightInstructor,IsActive,IDX_tblFlightInstructor_CompanyIdIsActiveIsDeleted,false,false,2025-10-21 09:51:18.240
+dbo,tblFlightInstructor,IsActive,ix_tblFlightInstructor_PilotId_IsActive_IsDeleted,false,false,2024-12-06 13:47:05.670
+dbo,tblFlightInstructor,IsDeleted,ix_tblFlightInstructor_PilotId_IsActive_IsDeleted,false,false,2024-12-06 13:47:05.670
+dbo,tblFlightInstructor,IsDeleted,IDX_tblFlightInstructor_CompanyIdIsActiveIsDeleted,false,false,2025-10-21 09:51:18.240
+dbo,tblFlightInstructor,IsDeleted,ix_CompanyId_IsDeleted,false,false,2024-12-06 13:47:05.977
+dbo,tblFlightInstructor,PilotId,ix_tblFlightInstructor_PilotId_IsActive_IsDeleted,false,false,2024-12-06 13:47:05.670
+dbo,tblFlightInstructor,UserGUIDId,IDX_tblFlightInstructor_UserGuidID_InstructorIdDisplayName,false,false,
+dbo,tblFlightInstructorLocationJoiner,FlightInstructorId,PK_tblFlightInstructorLocationJoiner,false,false,2023-08-30 23:11:39.930
+dbo,tblFlightInstructorLocationJoiner,LocationId,PK_tblFlightInstructorLocationJoiner,false,false,2023-08-30 23:11:39.930
+dbo,tblFlightInstructorLocationJoiner,LocationId,IDX_tblFlightInstructorLocationJoiner_LocationId,false,false,2023-08-30 23:11:39.950
+dbo,tblFlightInstructorLocationJoiner,OperatorId,_WA_Sys_00000004_40306ADC,true,false,2025-10-21 09:51:11.127
+dbo,tblFlightInstructorSchedule,CompanyId,PK_tblFlightInstructorSchedule,false,false,
+dbo,tblFlightInstructorSchedule,DayOfWeek,PK_tblFlightInstructorSchedule,false,false,
+dbo,tblFlightInstructorSchedule,InstructorId,PK_tblFlightInstructorSchedule,false,false,
+dbo,tblFlightInstructorSchedule,ShiftStart,PK_tblFlightInstructorSchedule,false,false,
+dbo,tblFlightInstructorScheduleAdjustments,AdjustmentId,PK_tblFlightInstructorScheduleAdjustments,false,false,
+dbo,tblFlightInstructorScheduleAdjustmentsInfo,RecurringId,PK_tblFlightInstructorScheduleAdjustmentsInfo,false,false,
+dbo,tblFlightRecord,AircraftId,_WA_Sys_0000002E_558AAF1E,true,false,2025-10-08 21:50:13.340
+dbo,tblFlightRecord,CompanyId,ix_tblFlightRecord_CompanyId_Location_Status_ObjectType_RecordedAt_includes,false,false,2025-10-21 09:54:39.603
+dbo,tblFlightRecord,CompanyId,ix_CompanyID_ReservationID,false,false,2025-10-08 21:50:43.123
+dbo,tblFlightRecord,CompanyId,IDX_tblFlightRecord_CompanyIdStatusEnd_FlightRecordIdCreatedAt,false,false,2025-10-08 21:50:44.410
+dbo,tblFlightRecord,End,IDX_tblFlightRecord_CompanyIdStatusEnd_FlightRecordIdCreatedAt,false,false,2025-10-08 21:50:44.410
+dbo,tblFlightRecord,End,_WA_Sys_00000005_558AAF1E,true,false,2025-10-08 21:50:44.463
+dbo,tblFlightRecord,FlightNumber,IX_tblFlightRecord,false,false,2025-10-08 21:50:34.143
+dbo,tblFlightRecord,FlightRecordId,PK_tblFlightRecord,false,false,2025-10-08 21:50:23.077
+dbo,tblFlightRecord,Location,ix_tblFlightRecord_CompanyId_Location_Status_ObjectType_RecordedAt_includes,false,false,2025-10-21 09:54:39.603
+dbo,tblFlightRecord,Location,_WA_Sys_0000000B_558AAF1E,true,false,2025-10-08 21:50:34.940
+dbo,tblFlightRecord,ObjectType,_WA_Sys_0000000C_558AAF1E,true,false,2025-10-08 21:50:43.067
+dbo,tblFlightRecord,ObjectType,ix_tblFlightRecord_CompanyId_Location_Status_ObjectType_RecordedAt_includes,false,false,2025-10-21 09:54:39.603
+dbo,tblFlightRecord,RecordedAt,ix_tblFlightRecord_CompanyId_Location_Status_ObjectType_RecordedAt_includes,false,false,2025-10-21 09:54:39.603
+dbo,tblFlightRecord,RecordedAt,_WA_Sys_00000012_558AAF1E,true,false,2025-10-08 21:49:57.240
+dbo,tblFlightRecord,ReservationId,ix_ReservationId,false,false,2025-10-08 21:50:44.330
+dbo,tblFlightRecord,ReservationId,ix_CompanyID_ReservationID,false,false,2025-10-08 21:50:43.123
+dbo,tblFlightRecord,ReservationNumber,_WA_Sys_0000002F_558AAF1E,true,false,2024-10-30 21:43:52.107
+dbo,tblFlightRecord,Start,_WA_Sys_00000004_558AAF1E,true,false,2024-10-31 18:07:59.860
+dbo,tblFlightRecord,Status,IDX_tblFlightRecord_CompanyIdStatusEnd_FlightRecordIdCreatedAt,false,false,2025-10-08 21:50:44.410
+dbo,tblFlightRecord,Status,IDX_tblFlightRecord_Status_FlightRecordId,false,false,2025-10-08 21:50:43.030
+dbo,tblFlightRecord,Status,ix_tblFlightRecord_CompanyId_Location_Status_ObjectType_RecordedAt_includes,false,false,2025-10-21 09:54:39.603
+dbo,tblFlightRecord,TotalFlightTime,_WA_Sys_0000004A_558AAF1E,true,false,2025-10-08 21:50:13.763
+dbo,tblFlightRecordInstructionTimes,FlightRecordId,PK_tblFlightRecordInstructionTimes,false,false,2024-12-05 17:21:43.473
+dbo,tblFlightRecordInstructionTimes,InstructionTypeId,PK_tblFlightRecordInstructionTimes,false,false,2024-12-05 17:21:43.473
+dbo,tblFlightRecordInstructionTimes,InstructionTypeId,_WA_Sys_00000002_01F34141,true,false,2023-08-30 23:13:58.757
+dbo,tblFlightRecordInstructionTimes,OperatorId,PK_tblFlightRecordInstructionTimes,false,false,2024-12-05 17:21:43.473
+dbo,tblFlightRecordInstructionTimes,OperatorId,_WA_Sys_00000003_01F34141,true,false,2025-10-21 09:51:12.710
+dbo,tblFlightRecordResources,_RowId,CX_tblFlightRecordResources,false,false,2023-09-17 23:19:56.137
+dbo,tblFlightRecordResources,CompanyId,ix_FlightRecordId_CompanyId_Includes,false,false,2023-09-17 23:19:56.290
+dbo,tblFlightRecordResources,CompanyId,ix_ItemId_CompanyId_Includes,false,false,2023-09-17 23:19:56.023
+dbo,tblFlightRecordResources,CompanyId,_WA_Sys_00000003_5B438874,true,false,2025-10-21 09:51:48.023
+dbo,tblFlightRecordResources,FlightRecordId,PK_tblFlightRecordResources,false,false,2023-09-17 23:19:55.857
+dbo,tblFlightRecordResources,FlightRecordId,ix_FlightRecordId_CompanyId_Includes,false,false,2023-09-17 23:19:56.290
+dbo,tblFlightRecordResources,ItemId,PK_tblFlightRecordResources,false,false,2023-09-17 23:19:55.857
+dbo,tblFlightRecordResources,ItemId,ix_ItemId_CompanyId_Includes,false,false,2023-09-17 23:19:56.023
+dbo,tblFlightSimulator,FlightSimulatorId,PK_tblFlightSimulator,false,false,
+dbo,tblFlightSimulatorTypes,FlightSimulatorTypeId,PK_tblFlightSimulatorTypes,false,false,
+dbo,tblGatewayPagesText,CompanyId,PK_tblGatewayPagesText,false,false,
+dbo,tblInvoiceImages,id,PK_tblInvoiceImages,false,false,
+dbo,tblInvoicingInvoice,CompanyId,IX_tblInvoicingInvoice_InvoiceNumber,false,false,
+dbo,tblInvoicingInvoice,InvoiceId,PK_tblInvoicingInvoice,false,false,
+dbo,tblInvoicingInvoice,InvoiceNumber,IX_tblInvoicingInvoice_InvoiceNumber,false,false,
+dbo,tblInvoicingInvoiceLineItem,InvoiceId,PK_tblInvoicingInvoiceLineItem,false,false,
+dbo,tblInvoicingInvoiceLineItem,Sequence,PK_tblInvoicingInvoiceLineItem,false,false,
+dbo,tblInvoicingLineItemAircraftFuelRateTypes,_RowNumber,PK_tblInvoicingLineItemAircraftFuelRateTypes,false,false,
+dbo,tblInvoicingLineItemAircraftRates,_RowNumber,PK_tblInvoicingLineItemAircraftRates,false,false,2023-09-01 23:26:54.707
+dbo,tblInvoicingLineItemAircraftRates,DoesNotApply,ix_OperatorId_DoesNotApply_Includes,false,false,2025-10-21 09:54:14.950
+dbo,tblInvoicingLineItemAircraftRates,DoesNotApply,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemAircraftRates,LineItemId,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemAircraftRates,OperatorId,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemAircraftRates,OperatorId,ix_OperatorId_DoesNotApply_Includes,false,false,2025-10-21 09:54:14.950
+dbo,tblInvoicingLineItemInstructionRates,_RowNumber,PK_tblInvoicingLineItemInstructionRates,false,false,2023-08-30 23:43:58.377
+dbo,tblInvoicingLineItemInstructionRates,DoesNotApply,ix_OperatorId_DoesNotApply_Includes,false,false,2025-10-21 09:57:07.863
+dbo,tblInvoicingLineItemInstructionRates,DoesNotApply,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemInstructionRates,LineItemId,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemInstructionRates,OperatorId,ix_OperatorId_LineItemId_DoesNotApply_Includes,false,false,
+dbo,tblInvoicingLineItemInstructionRates,OperatorId,ix_OperatorId_DoesNotApply_Includes,false,false,2025-10-21 09:57:07.863
+dbo,tblInvoicingLineItems,CompanyId,IDX_CompanyIdStatusV4LineItem_LineItemIdDescriptionUnitCostNameItemTypeIdServiceTypeIdResourceId,false,false,2025-10-21 09:52:59.230
+dbo,tblInvoicingLineItems,CompanyId,IDX_tblInvoicingLineItems_CompanyIdStatusV4LineItemItemTypeId_Name,false,false,
+dbo,tblInvoicingLineItems,ItemTypeId,IDX_tblInvoicingLineItems_CompanyIdStatusV4LineItemItemTypeId_Name,false,false,
+dbo,tblInvoicingLineItems,LineItemId,PK_tblInvoicingLineItems,false,false,2023-08-30 23:41:16.850
+dbo,tblInvoicingLineItems,Status,IDX_CompanyIdStatusV4LineItem_LineItemIdDescriptionUnitCostNameItemTypeIdServiceTypeIdResourceId,false,false,2025-10-21 09:52:59.230
+dbo,tblInvoicingLineItems,Status,IDX_tblInvoicingLineItems_CompanyIdStatusV4LineItemItemTypeId_Name,false,false,
+dbo,tblInvoicingLineItems,V4LineItem,IDX_tblInvoicingLineItems_CompanyIdStatusV4LineItemItemTypeId_Name,false,false,
+dbo,tblInvoicingLineItems,V4LineItem,IDX_CompanyIdStatusV4LineItem_LineItemIdDescriptionUnitCostNameItemTypeIdServiceTypeIdResourceId,false,false,2025-10-21 09:52:59.230
+dbo,tblInvoicingLineItemTaxJoiner,LineItemId,PK_tblInvoicingLineItemTaxJoiner,false,false,
+dbo,tblInvoicingLineItemTaxJoiner,TaxId,PK_tblInvoicingLineItemTaxJoiner,false,false,
+dbo,tblInvoicingPayments,PaymentId,PK_tblInvoicingPayments,false,false,
+dbo,tblInvoicingPreferences,CompanyId,PK_tblInvoicingPreferences,false,false,2025-06-22 09:28:18.800
+dbo,tblInvoicingTaxes,TaxId,PK_tblInvoicingTaxes,false,false,
+dbo,tblInvoicingTransactions,Amount,IX_tblInvoicingTransactions_transTypeVisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,CompanyId,IX_tblInvoicingTransactions_transTypeVisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,CompanyId,IX_tblInvoicingTransactions_TransactionType_CompanyId_ParentId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,CompanyId,ix_tblInvoicingTransactions_TransactionType_CompanyId_VisibilityStatus_includes,false,false,
+dbo,tblInvoicingTransactions,CompanyId,IX_tblInvoicingTransactions_TransTypeCompanyIdVisibilityStatusUserIdAmount,false,false,
+dbo,tblInvoicingTransactions,CompanyId,ix_tblInvoicingTransactions_CompanyId_InvoiceNumber,false,false,
+dbo,tblInvoicingTransactions,CompanyId,IX_tblInvoicingTransactions_CompanyIdUserId,false,false,
+dbo,tblInvoicingTransactions,CompanyId,IDX_tblInvoicingTransactions_CompanyId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,CompanyId,ix_tblInvoicingTransactions_CompanyId_Date_includes,false,false,
+dbo,tblInvoicingTransactions,Date,ix_tblInvoicingTransactions_CompanyId_Date_includes,false,false,
+dbo,tblInvoicingTransactions,InvoiceNumber,ix_tblInvoicingTransactions_CompanyId_InvoiceNumber,false,false,
+dbo,tblInvoicingTransactions,ParentId,IX_tblInvoicingTransactions_ParentId,false,false,
+dbo,tblInvoicingTransactions,ParentId,IX_tblInvoicingTransactions_TransactionType_CompanyId_ParentId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,RowId,PK_tblInvoicingTransactions_1,false,false,
+dbo,tblInvoicingTransactions,TransactionType,ix_tblInvoicingTransactions_TransactionType_CompanyId_VisibilityStatus_includes,false,false,
+dbo,tblInvoicingTransactions,TransactionType,IX_tblInvoicingTransactions_TransactionType_CompanyId_ParentId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,TransactionType,IX_tblInvoicingTransactions_transTypeVisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,TransactionType,IX_tblInvoicingTransactions_TransTypeCompanyIdVisibilityStatusUserIdAmount,false,false,
+dbo,tblInvoicingTransactions,UserId,IX_tblInvoicingTransactions_transTypeVisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,UserId,IX_tblInvoicingTransactions_CompanyIdUserId,false,false,
+dbo,tblInvoicingTransactions,VisibilityStatus,IDX_tblInvoicingTransactions_CompanyId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,VisibilityStatus,IX_tblInvoicingTransactions_TransactionType_CompanyId_ParentId_VisibilityStatus,false,false,
+dbo,tblInvoicingTransactions,VisibilityStatus,IX_tblInvoicingTransactions_TransTypeCompanyIdVisibilityStatusUserIdAmount,false,false,
+dbo,tblInvoicingTransactions,VisibilityStatus,ix_tblInvoicingTransactions_TransactionType_CompanyId_VisibilityStatus_includes,false,false,
+dbo,tblInvoicingTransactions,VisibilityStatus,IX_tblInvoicingTransactions_transTypeVisibilityStatus,false,false,
+dbo,tblLocations,Id,PK_tblLocations,false,false,2024-12-05 15:31:22.360
+dbo,tblLocations,Name,_WA_Sys_00000002_6991A7CB,true,false,2024-12-06 15:29:50.450
+dbo,tblLocations,OperatorId,_WA_Sys_00000007_6991A7CB,true,false,2025-09-28 09:43:03.220
+dbo,tblLocationToCompanyJoiner,CompanyId,PK_tblLocationToCompanyJoiner,false,false,2025-09-28 09:43:01.347
+dbo,tblLocationToCompanyJoiner,LocationId,PK_tblLocationToCompanyJoiner,false,false,2025-09-28 09:43:01.347
+dbo,tblLocationToCompanyJoiner,LocationId,_WA_Sys_00000003_7132C993,true,false,2023-08-04 23:04:41.290
+dbo,tblLocationToPersonJoiner,Approved,ix_tblLocationToPersonJoiner_CompanyId_Approved,false,false,2025-10-21 09:53:58.810
+dbo,tblLocationToPersonJoiner,CompanyId,ix_tblLocationToPersonJoiner_CompanyId_Approved,false,false,2025-10-21 09:53:58.810
+dbo,tblLocationToPersonJoiner,LocationId,PK_tblLocationToPersonJoiner,false,false,2024-12-06 14:00:52.110
+dbo,tblLocationToPersonJoiner,PersonId,PK_tblLocationToPersonJoiner,false,false,2024-12-06 14:00:52.110
+dbo,tblLocationToPersonJoiner,PersonId,IDX_tblLocationToPersonJoiner_PersonId,false,false,2024-12-06 14:00:52.087
+dbo,tblLogBookEntries,CompanyId,IDX_tblLogBookEntries_CompanyId_FlightRecordId,false,false,
+dbo,tblLogBookEntries,FlightRecordId,IDX_tblLogBookEntries_CompanyId_FlightRecordId,false,false,
+dbo,tblLogBookEntries,FlightRecordId,IDX_tblLogBookEntries_FlightRecordId,false,false,
+dbo,tblLogBookEntries,LogbookEntryId,PK_tblFlightRecords,false,false,
+dbo,tblMaintenanceReminders,AircraftId,ix_tblMaintenanceReminders_CompanyId_AircraftId,false,false,
+dbo,tblMaintenanceReminders,AircraftId,ix_tblMaintenanceReminders_CompanyId_AircraftId_IsTimeBasedReminder,false,false,
+dbo,tblMaintenanceReminders,CompanyId,ix_tblMaintenanceReminders_CompanyId_AircraftId_IsTimeBasedReminder,false,false,
+dbo,tblMaintenanceReminders,CompanyId,ix_tblMaintenanceReminders_CompanyId_AircraftId,false,false,
+dbo,tblMaintenanceReminders,IsTimeBasedReminder,ix_tblMaintenanceReminders_CompanyId_AircraftId_IsTimeBasedReminder,false,false,
+dbo,tblMaintenanceReminders,ReminderId,PK_tblMaintenanceReminders,false,false,
+dbo,tblMeterRecords,_RowId,CX_tblMeterRecords,false,false,2023-08-30 23:40:02.057
+dbo,tblMeterRecords,FlightRecordId,IDX_tblMeterRecords_FlightRecordId,false,false,
+dbo,tblMeterRecords,MeterRecordId,PK_tblMeterRecords,false,false,2023-08-30 23:40:00.403
+dbo,tblMeterRecords,OperatorId,_WA_Sys_0000000E_5F141958,true,false,2025-10-21 09:54:14.903
+dbo,tblPermission,PermissionTypeId,PK_tblPermission,false,false,2023-07-18 23:00:50.887
+dbo,tblPermission,PermissionValue,PK_tblPermission,false,false,2023-07-18 23:00:50.887
+dbo,tblPermission,PermissionValue,_WA_Sys_00000002_102C51FF,true,false,2023-07-18 23:00:50.903
+dbo,tblPerson,CompanyName,_WA_Sys_00000020_3469B275,true,false,2024-11-18 20:21:00.117
+dbo,tblPerson,FirstName,_WA_Sys_00000003_3469B275,true,false,2025-08-08 14:00:33.283
+dbo,tblPerson,LastName,LastName,false,false,2025-08-08 14:00:33.213
+dbo,tblPerson,LastName,IDX_tblPerson_LastName_PersonIdUserId,false,false,
+dbo,tblPerson,MiddleName,_WA_Sys_00000004_3469B275,true,false,2024-11-19 21:49:24.093
+dbo,tblPerson,OperatorId,_WA_Sys_00000022_3469B275,true,false,2025-10-21 09:55:01.773
+dbo,tblPerson,PersonId,PK_tblPerson,false,false,2024-12-06 13:47:05.807
+dbo,tblPerson,TimeZone,TimeZone,false,false,2025-08-08 14:00:33.247
+dbo,tblPerson,UICulture,UICulture,false,false,2025-08-08 14:00:33.263
+dbo,tblPerson,UserGUIDId,IDX_tblPerson_UserGuidId_FirstNameLastName,false,false,2025-08-08 14:00:33.180
+dbo,tblPerson,UserId,IDX_tblPerson_UserId_PersonId,false,false,2024-10-31 18:47:45.443
+dbo,tblPerson,WebSiteURL,_WA_Sys_00000006_3469B275,true,false,2024-11-18 20:21:20.913
+dbo,tblPersonAddressJoiner,AddressId,PK_tblPersonAddressJoiner,false,false,2023-08-30 23:41:47.110
+dbo,tblPersonAddressJoiner,AddressId,_WA_Sys_00000003_79C80F94,true,false,2023-08-30 23:41:47.123
+dbo,tblPersonAddressJoiner,AddressTypeId,PK_tblPersonAddressJoiner,false,false,2023-08-30 23:41:47.110
+dbo,tblPersonAddressJoiner,AddressTypeId,_WA_Sys_00000002_79C80F94,true,false,2023-08-30 23:41:47.117
+dbo,tblPersonAddressJoiner,OperatorId,_WA_Sys_00000005_79C80F94,true,false,2025-10-21 09:54:23.477
+dbo,tblPersonAddressJoiner,PersonId,PK_tblPersonAddressJoiner,false,false,2023-08-30 23:41:47.110
+dbo,tblPersonEmailJoiner,EmailId,PK_tblPersonEmailJoiner,false,false,2023-08-30 23:15:52.857
+dbo,tblPersonEmailJoiner,EmailId,EmailId,false,false,2023-08-30 23:15:52.883
+dbo,tblPersonEmailJoiner,EmailTypeId,_WA_Sys_00000003_01A9287E,true,false,2023-08-30 23:15:52.890
+dbo,tblPersonEmailJoiner,EmailTypeId,PK_tblPersonEmailJoiner,false,false,2023-08-30 23:15:52.857
+dbo,tblPersonEmailJoiner,OperatorId,_WA_Sys_00000005_01A9287E,true,false,2025-10-21 09:51:10.353
+dbo,tblPersonEmailJoiner,PersonId,PersonId,false,false,2023-08-30 23:15:52.900
+dbo,tblPersonEmailJoiner,PersonId,PK_tblPersonEmailJoiner,false,false,2023-08-30 23:15:52.857
+dbo,tblPersonToContactNumberJoiner,ContactNumberId,PK_tblPersonToContactNumberJoiner,false,false,2023-08-30 23:16:20.180
+dbo,tblPersonToContactNumberJoiner,ContactNumberId,_WA_Sys_00000002_04459E07,true,false,2023-08-30 23:16:20.187
+dbo,tblPersonToContactNumberJoiner,ContactNumberType,_WA_Sys_00000003_04459E07,true,false,2023-08-30 23:16:20.193
+dbo,tblPersonToContactNumberJoiner,ContactNumberType,PK_tblPersonToContactNumberJoiner,false,false,2023-08-30 23:16:20.180
+dbo,tblPersonToContactNumberJoiner,OperatorId,_WA_Sys_00000005_04459E07,true,false,2025-10-21 09:51:24.740
+dbo,tblPersonToContactNumberJoiner,PersonId,PK_tblPersonToContactNumberJoiner,false,false,2023-08-30 23:16:20.180
+dbo,tblPilot,CompanyId,IDX_tblPilot_CompanyId,false,false,2025-10-21 09:51:32.860
+dbo,tblPilot,CompanyId,ix_CompanyId_Includes,false,false,2024-12-06 13:47:05.997
+dbo,tblPilot,PersonId,IDX_tblPilot_PersonId_PilotId,false,false,2024-12-06 13:47:05.777
+dbo,tblPilot,PilotId,PK_tblPilot,false,false,2024-12-06 13:47:05.757
+dbo,tblPilot,UserGUIDId,IDX_tblPilot_UserGuidId_PilotId,false,false,2024-12-06 14:27:45.027
+dbo,tblPilot_PilotCurrencyRemindersJoiner,CompanyId,PK_tblPilot_PilotCurrencyRemindersJoiner,false,false,
+dbo,tblPilot_PilotCurrencyRemindersJoiner,PilotId,PK_tblPilot_PilotCurrencyRemindersJoiner,false,false,
+dbo,tblPilot_PilotCurrencyRemindersJoiner,ReminderId,PK_tblPilot_PilotCurrencyRemindersJoiner,false,false,
+dbo,tblPilotCertificate,OperatorId,_WA_Sys_00000028_418EA369,true,false,2025-10-21 09:51:48.083
+dbo,tblPilotCertificate,PilotId,PK_tblPilotCertificate,false,false,2023-08-30 23:13:16.067
+dbo,tblPilotCurrencyItems,Id,PK_tblPilotCurrencyItems,false,false,
+dbo,tblPilotCurrencyReminders,CompanyId,ix_tblPilotCurrencyReminders_CompanyId,false,false,
+dbo,tblPilotCurrencyReminders,Id,PK_tblPilotCurrencyReminders,false,false,
+dbo,tblPilotCurrencyTypes,Id,PK_tblPilotCurrencyTypes,false,false,
+dbo,tblPilotEndorsements,EndorsementId,PK_tblPilotEndorsements,false,false,
+dbo,tblPilotInsuranceInfo,OperatorId,_WA_Sys_00000016_556091EC,true,false,2025-10-21 09:51:59.843
+dbo,tblPilotInsuranceInfo,PilotId,PK_tblPilotInsuranceInfo,false,false,2023-08-30 23:33:44.887
+dbo,tblPilotPilotEndorsementsJoiner,EndorsementId,PK_tblPilotPilotEndorsementsJoiner,false,false,
+dbo,tblPilotPilotEndorsementsJoiner,PilotId,PK_tblPilotPilotEndorsementsJoiner,false,false,
+dbo,tblPilotPilotRatingsJoiner,PilotId,PK_tblPilotPilotRatingsJoiner,false,false,
+dbo,tblPilotPilotRatingsJoiner,RatingId,PK_tblPilotPilotRatingsJoiner,false,false,
+dbo,tblPilotPilotTypesJoiner,PilotId,PK_tblPilotPilotTypesJoiner,false,false,
+dbo,tblPilotPilotTypesJoiner,PilotTypeId,PK_tblPilotPilotTypesJoiner,false,false,
+dbo,tblPilotRatings,RatingId,PK_tblPilotRatings,false,false,
+dbo,tblPilotTSADocuments,TSADocumentId,PK_tblPilotTSADocuments,false,false,
+dbo,tblPilotTSAVerification,OperatorId,_WA_Sys_00000009_5C02A283,true,false,2025-10-21 09:51:33.823
+dbo,tblPilotTSAVerification,PilotId,PK_tblPilotTSAVerification,false,false,2023-08-30 23:16:40.377
+dbo,tblPilotTypes,PilotTypeId,PK_tblPilotTypes,false,false,
+dbo,tblPostItemRoleIds,Id,PK_tblPostItemRoleIds,false,false,2023-09-05 23:29:30.407
+dbo,tblPostItemRoleIds,OperatorId,_WA_Sys_00000005_0DCF0841,true,false,2025-10-12 09:46:05.400
+dbo,tblPostItemRoleIds,PostItemId,IDX_tblPostItemRoleIds_PostItemId,false,false,
+dbo,tblPostItems,CompanyId,IDX_tblPostItems_CompanyIdIsBulletinBoardPostUntilDateStartDate,false,false,2025-10-17 09:54:58.587
+dbo,tblPostItems,ID,PK_tblPostItems,false,false,2023-09-05 23:28:14.270
+dbo,tblPostItems,IsBulletinBoard,IDX_tblPostItems_CompanyIdIsBulletinBoardPostUntilDateStartDate,false,false,2025-10-17 09:54:58.587
+dbo,tblPostItems,PostUntilDate,IDX_tblPostItems_CompanyIdIsBulletinBoardPostUntilDateStartDate,false,false,2025-10-17 09:54:58.587
+dbo,tblPostItems,StartDate,IDX_tblPostItems_CompanyIdIsBulletinBoardPostUntilDateStartDate,false,false,2025-10-17 09:54:58.587
+dbo,tblPropeller,CompanyId,_WA_Sys_00000002_797DF6D1,true,false,2025-10-21 09:51:23.850
+dbo,tblPropeller,PropellerId,PK_tblPropeller,false,false,2023-08-30 23:18:17.517
+dbo,tblProvinces,Abbreviation,PK_tblProvinces,false,false,
+dbo,tblRemovedReservation,CompanyId,ix_tblRemovedReservation_CompanyId_Start_End_includes,false,false,2025-10-21 09:51:14.930
+dbo,tblRemovedReservation,CompanyId,ix_tblRemovedReservation_IsStandby_CompanyId_Start_End,false,false,
+dbo,tblRemovedReservation,DeletionReason,_WA_Sys_00000010_119F9925,true,false,2024-12-05 21:31:04.013
+dbo,tblRemovedReservation,End,ix_tblRemovedReservation_CompanyId_Start_End_includes,false,false,2025-10-21 09:51:14.930
+dbo,tblRemovedReservation,End,ix_tblRemovedReservation_IsStandby_CompanyId_Start_End,false,false,
+dbo,tblRemovedReservation,IsStandby,ix_tblRemovedReservation_IsStandby_CompanyId_Start_End,false,false,
+dbo,tblRemovedReservation,LocationId,ix_tblRemovedReservation_LocationId_Start_includes,false,false,
+dbo,tblRemovedReservation,ReservationId,PK_tblRemovedReservation,false,false,2023-08-30 23:07:17.010
+dbo,tblRemovedReservation,Start,ix_tblRemovedReservation_CompanyId_Start_End_includes,false,false,2025-10-21 09:51:14.930
+dbo,tblRemovedReservation,Start,ix_tblRemovedReservation_IsStandby_CompanyId_Start_End,false,false,
+dbo,tblRemovedReservation,Start,ix_tblRemovedReservation_LocationId_Start_includes,false,false,
+dbo,tblRemovedReservationFlightDetails,OperatorId,_WA_Sys_00000009_269AB60B,true,false,2025-10-21 09:51:53.587
+dbo,tblRemovedReservationFlightDetails,ReservationId,PK_tblRemovedReservationFlightDetails,false,false,2023-08-30 23:17:58.287
+dbo,tblRemovedReservationFlightLegs,Counter,PK_tblRemovedReservationFlightLegs,false,false,
+dbo,tblRemovedReservationPilots,CompanyId,_WA_Sys_00000004_2A6B46EF,true,false,2025-10-21 09:52:14.323
+dbo,tblRemovedReservationPilots,PilotId,PK_tblRemovedReservationPilots,false,false,2023-08-30 23:17:12.123
+dbo,tblRemovedReservationPilots,PilotId,ix_PilotId,false,false,2023-08-30 23:17:12.427
+dbo,tblRemovedReservationPilots,ReservationId,PK_tblRemovedReservationPilots,false,false,2023-08-30 23:17:12.123
+dbo,tblRemovedReservationResources,CompanyId,_WA_Sys_00000004_2F2FFC0C,true,false,2025-10-21 09:52:03.043
+dbo,tblRemovedReservationResources,ItemId,_WA_Sys_00000002_2F2FFC0C,true,false,2023-08-30 23:15:24.387
+dbo,tblRemovedReservationResources,ItemId,PK_tblRemovedReservationResources,false,false,2023-08-30 23:15:24.343
+dbo,tblRemovedReservationResources,ReservationId,PK_tblRemovedReservationResources,false,false,2023-08-30 23:15:24.343
+dbo,tblReservation,ByAircraftType,_WA_Sys_00000010_6F7F8B4B,true,false,2024-10-30 17:16:15.493
+dbo,tblReservation,CompanyId,ix_tblReservation_IsStandby_CompanyId_Start_End_includes,false,false,2025-08-08 13:58:17.017
+dbo,tblReservation,CompanyId,IDX_tblReservation_ReservationTypeIdIsStandByCompanyIdStartEnd_ReservationIdDispatchId,false,false,2025-08-08 13:58:07.027
+dbo,tblReservation,CompanyId,ix_CompanyId_Includes,false,false,2025-08-08 13:58:10.090
+dbo,tblReservation,CompanyId,ix_CompanyId_Created,false,false,2025-10-21 09:51:11.740
+dbo,tblReservation,CompanyId,IX_tblReservation_CompanyDates,false,false,2025-08-08 13:58:14.200
+dbo,tblReservation,CompanyId,IDX_tblReservation_GroupingId_CompanyId_ReservationId_Start_End,false,false,2025-08-08 13:58:27.780
+dbo,tblReservation,CourseId,_WA_Sys_0000001F_6F7F8B4B,true,false,2024-11-19 22:18:50.297
+dbo,tblReservation,Created,_WA_Sys_0000000B_6F7F8B4B,true,false,2025-08-08 13:58:10.143
+dbo,tblReservation,Created,ix_CompanyId_Created,false,false,2025-10-21 09:51:11.740
+dbo,tblReservation,DispatchId,ix_DispatchId,false,false,2025-08-08 13:58:17.093
+dbo,tblReservation,DispatchId,ix_DispatchId_Includes,false,false,2025-08-08 13:58:17.160
+dbo,tblReservation,End,IX_tblReservation_CompanyDates,false,false,2025-08-08 13:58:14.200
+dbo,tblReservation,End,IDX_tblReservation_ReservationTypeIdIsStandByCompanyIdStartEnd_ReservationIdDispatchId,false,false,2025-08-08 13:58:07.027
+dbo,tblReservation,End,_WA_Sys_0000000A_6F7F8B4B,true,false,2025-08-08 13:58:16.943
+dbo,tblReservation,End,ix_tblReservation_IsStandby_CompanyId_Start_End_includes,false,false,2025-08-08 13:58:17.017
+dbo,tblReservation,GroupingId,IDX_tblReservation_GroupingId_CompanyId_ReservationId_Start_End,false,false,2025-08-08 13:58:27.780
+dbo,tblReservation,IsStandby,ix_tblReservation_IsStandby_CompanyId_Start_End_includes,false,false,2025-08-08 13:58:17.017
+dbo,tblReservation,IsStandby,IX_tblReservation_CompanyDates,false,false,2025-08-08 13:58:14.200
+dbo,tblReservation,IsStandby,IDX_tblReservation_ReservationTypeIdIsStandByCompanyIdStartEnd_ReservationIdDispatchId,false,false,2025-08-08 13:58:07.027
+dbo,tblReservation,LocationId,_WA_Sys_00000013_6F7F8B4B,true,false,2024-12-05 15:37:59.610
+dbo,tblReservation,ReservationId,PK_tblReservation,false,false,2025-08-08 13:57:29.540
+dbo,tblReservation,ReservationId,IX_tblReservation_IdTypeId,false,false,2025-08-08 13:58:30.343
+dbo,tblReservation,ReservationNumber,IX_tblReservationClustered,false,false,2025-08-08 13:58:07.523
+dbo,tblReservation,ReservationTypeId,IX_tblReservation_IdTypeId,false,false,2025-08-08 13:58:30.343
+dbo,tblReservation,ReservationTypeId,IDX_tblReservation_ReservationTypeIdIsStandByCompanyIdStartEnd_ReservationIdDispatchId,false,false,2025-08-08 13:58:07.027
+dbo,tblReservation,Start,ix_tblReservation_IsStandby_CompanyId_Start_End_includes,false,false,2025-08-08 13:58:17.017
+dbo,tblReservation,Start,_WA_Sys_00000009_6F7F8B4B,true,false,2025-08-08 13:58:16.890
+dbo,tblReservation,Start,IDX_tblReservation_ReservationTypeIdIsStandByCompanyIdStartEnd_ReservationIdDispatchId,false,false,2025-08-08 13:58:07.027
+dbo,tblReservation,Start,IX_tblReservation_CompanyDates,false,false,2025-08-08 13:58:14.200
+dbo,tblReservation,StartUTC,_WA_Sys_00000019_6F7F8B4B,true,false,2024-10-16 17:35:47.383
+dbo,tblReservationFlightDetails,_RowId,CX_tblReservationFlightDetails,false,false,2023-08-30 23:16:40.237
+dbo,tblReservationFlightDetails,OperatorId,IDX_tblReservationFlightDetails_OperatorId_ReservationId,false,false,2025-10-21 09:52:32.993
+dbo,tblReservationFlightDetails,ReservationId,PK_tblReservationFlightDetails,false,false,2023-08-30 23:16:38.693
+dbo,tblReservationFlightLegs,CompanyId,IX_tblReservationFlightLegs_CompanyId,false,false,
+dbo,tblReservationFlightLegs,Counter,PK_tblReservationFlightLegs,false,false,
+dbo,tblReservationFlightLegs,ParentId,IX_tblReservationFlightLegs_ParentId,false,false,
+dbo,tblReservationNotifications,ReservationId,PK_tblReservationNotifications,false,false,
+dbo,tblReservationPilots,_RowId,CX_tblReservationPilots,false,false,2024-12-05 17:02:36.547
+dbo,tblReservationPilots,CompanyId,IX_tblReservationPilotsFields,false,false,2024-12-05 17:02:31.793
+dbo,tblReservationPilots,CompanyId,IX_tblReservationPilots,false,false,2024-12-05 17:02:36.903
+dbo,tblReservationPilots,CompanyId,_WA_Sys_00000004_3B95D2F1,true,false,2025-10-21 09:53:06.957
+dbo,tblReservationPilots,End,_WA_Sys_00000007_3B95D2F1,true,false,2024-12-05 17:02:36.767
+dbo,tblReservationPilots,End,IX_tblReservationPilots,false,false,2024-12-05 17:02:36.903
+dbo,tblReservationPilots,End,IX_tblReservationPilotsFields,false,false,2024-12-05 17:02:31.793
+dbo,tblReservationPilots,IsStandBy,_WA_Sys_00000005_3B95D2F1,true,false,2024-12-05 17:02:36.610
+dbo,tblReservationPilots,IsStandBy,IX_tblReservationPilotsFields,false,false,2024-12-05 17:02:31.793
+dbo,tblReservationPilots,PilotId,PK_tblReservationPilots,false,false,2024-12-05 17:02:31.590
+dbo,tblReservationPilots,PilotId,IX_tblReservationPilotsFields,false,false,2024-12-05 17:02:31.793
+dbo,tblReservationPilots,PilotId,IX_tblReservationPilots,false,false,2024-12-05 17:02:36.903
+dbo,tblReservationPilots,ReservationId,IX_tblReservationPilots,false,false,2024-12-05 17:02:36.903
+dbo,tblReservationPilots,ReservationId,PK_tblReservationPilots,false,false,2024-12-05 17:02:31.590
+dbo,tblReservationPilots,Start,IX_tblReservationPilotsFields,false,false,2024-12-05 17:02:31.793
+dbo,tblReservationPilots,Start,_WA_Sys_00000006_3B95D2F1,true,false,2024-12-05 17:02:36.683
+dbo,tblReservationRecurringInfo,_RowId,CX_tblReservationRecurringInfo,false,false,
+dbo,tblReservationRecurringInfo,CompanyId,_WA_Sys_00000002_4D9F7493,true,false,2025-10-21 09:51:52.823
+dbo,tblReservationRecurringInfo,RecurringId,PK_tblReservationRecurringInfo,false,false,2023-08-30 23:19:33.053
+dbo,tblReservationResources,_RowId,CX_tblReservationResources,false,false,2024-12-06 15:13:03.963
+dbo,tblReservationResources,CompanyId,IDX_tblReservationResources_CompanyIdIsStandByItemIdStartEnd_ReservationId,false,false,2025-10-21 09:55:16.763
+dbo,tblReservationResources,CompanyId,IDX_tblReservationResources_CompanyIdItemIdStartEnd_ReservationId,false,false,2024-12-06 15:13:09.470
+dbo,tblReservationResources,CompanyId,ix_tblReservationResources_ItemId_CompanyId_ResourceType_includes,false,false,2024-12-06 15:12:56.003
+dbo,tblReservationResources,End,IDX_tblReservationResources_CompanyIdItemIdStartEnd_ReservationId,false,false,2024-12-06 15:13:09.470
+dbo,tblReservationResources,End,IDX_tblReservationResources_CompanyIdIsStandByItemIdStartEnd_ReservationId,false,false,2025-10-21 09:55:16.763
+dbo,tblReservationResources,End,IDX_tblReservationResources_ItemIdIsStandByStartEnd_ReservationId,false,false,2024-12-06 15:13:14.933
+dbo,tblReservationResources,End,_WA_Sys_00000008_405A880E,true,false,2024-12-06 15:13:09.347
+dbo,tblReservationResources,IsStandBy,_WA_Sys_00000005_405A880E,true,false,2024-12-06 15:13:09.230
+dbo,tblReservationResources,IsStandBy,IDX_tblReservationResources_ItemIdIsStandByStartEnd_ReservationId,false,false,2024-12-06 15:13:14.933
+dbo,tblReservationResources,IsStandBy,IDX_tblReservationResources_CompanyIdIsStandByItemIdStartEnd_ReservationId,false,false,2025-10-21 09:55:16.763
+dbo,tblReservationResources,ItemId,IDX_tblReservationResources_CompanyIdIsStandByItemIdStartEnd_ReservationId,false,false,2025-10-21 09:55:16.763
+dbo,tblReservationResources,ItemId,ix_tblReservationResources_ItemId_CompanyId_ResourceType_includes,false,false,2024-12-06 15:12:56.003
+dbo,tblReservationResources,ItemId,IDX_tblReservationResources_CompanyIdItemIdStartEnd_ReservationId,false,false,2024-12-06 15:13:09.470
+dbo,tblReservationResources,ItemId,PK_tblReservationResources,false,false,2024-12-06 15:12:49.467
+dbo,tblReservationResources,ItemId,IDX_tblReservationResources_ItemIdIsStandByStartEnd_ReservationId,false,false,2024-12-06 15:13:14.933
+dbo,tblReservationResources,ReservationId,PK_tblReservationResources,false,false,2024-12-06 15:12:49.467
+dbo,tblReservationResources,ResourceType,ix_tblReservationResources_ItemId_CompanyId_ResourceType_includes,false,false,2024-12-06 15:12:56.003
+dbo,tblReservationResources,ResourceType,_WA_Sys_00000006_405A880E,true,false,2024-12-06 15:12:49.370
+dbo,tblReservationResources,Start,_WA_Sys_00000007_405A880E,true,false,2024-12-06 15:13:09.283
+dbo,tblReservationResources,Start,IDX_tblReservationResources_ItemIdIsStandByStartEnd_ReservationId,false,false,2024-12-06 15:13:14.933
+dbo,tblReservationResources,Start,IDX_tblReservationResources_CompanyIdItemIdStartEnd_ReservationId,false,false,2024-12-06 15:13:09.470
+dbo,tblReservationResources,Start,IDX_tblReservationResources_CompanyIdIsStandByItemIdStartEnd_ReservationId,false,false,2025-10-21 09:55:16.763
+dbo,tblReservationTypes,AircraftEnabled,_WA_Sys_00000019_57B2EEB2,true,false,2024-10-30 18:07:48.060
+dbo,tblReservationTypes,CompanyId,IDX_tblReservationTypes_CompanyIdDisplayType,false,false,2025-10-21 09:51:03.910
+dbo,tblReservationTypes,CompletedBackground,_WA_Sys_00000012_57B2EEB2,true,false,2024-10-30 18:07:24.337
+dbo,tblReservationTypes,CompletedForeground,_WA_Sys_00000011_57B2EEB2,true,false,2024-10-30 18:07:27.247
+dbo,tblReservationTypes,DisplayType,IDX_tblReservationTypes_CompanyIdDisplayType,false,false,2025-10-21 09:51:03.910
+dbo,tblReservationTypes,DisplayType,_WA_Sys_00000004_57B2EEB2,true,false,2025-06-06 20:36:32.273
+dbo,tblReservationTypes,ReservationName,_WA_Sys_00000003_57B2EEB2,true,false,2024-11-04 16:57:26.530
+dbo,tblReservationTypes,ReservationTypeId,PK_tblReservationTypes,false,false,2025-08-08 13:58:07.067
+dbo,tblResourceLineItemJoiner,ResourceId,PK_tblResourceLineItemJoiner,false,false,
+dbo,tblRole,CompanyId,IX_tblRole,false,false,2025-10-21 09:51:33.857
+dbo,tblRole,RoleId,PK_tblRole,false,false,2024-11-05 21:11:03.450
+dbo,tblRole,RoleName,IX_tblRole,false,false,2025-10-21 09:51:33.857
+dbo,tblRole,RoleName,_WA_Sys_00000003_46136164,true,false,2025-01-31 14:24:50.197
+dbo,tblRolePermissionJoiner,OperatorId,_WA_Sys_00000005_4EA8A765,true,false,2025-10-21 09:51:39.980
+dbo,tblRolePermissionJoiner,PermissionId,_WA_Sys_00000002_4EA8A765,true,false,2023-08-30 23:24:35.777
+dbo,tblRolePermissionJoiner,PermissionId,PK_tblRolePermissionJoiner,false,false,2023-08-30 23:24:35.770
+dbo,tblRolePermissionJoiner,PermissionTypeId,PK_tblRolePermissionJoiner,false,false,2023-08-30 23:24:35.770
+dbo,tblRolePermissionJoiner,PermissionTypeId,_WA_Sys_00000003_4EA8A765,true,false,2023-08-30 23:24:35.780
+dbo,tblRolePermissionJoiner,RoleId,PK_tblRolePermissionJoiner,false,false,2023-08-30 23:24:35.770
+dbo,tblSquawk,AircraftId,_WA_Sys_00000003_2C29722F,true,false,2024-12-05 17:53:46.353
+dbo,tblSquawk,AircraftId,ix_tblSquawk_CompanyId_AircraftId_IsGroundable,false,false,2025-10-21 09:51:40.597
+dbo,tblSquawk,CompanyId,ix_tblSquawk_CompanyId_AircraftId_IsGroundable,false,false,2025-10-21 09:51:40.597
+dbo,tblSquawk,DateSubmitted,IDX_tblSquawk_DateSubmitted,false,false,2024-12-05 17:53:46.370
+dbo,tblSquawk,FlightRecordId,ix_tblSquawk_FlightRecordId,false,false,2024-12-05 17:53:46.377
+dbo,tblSquawk,Id,PK_tblSquawk,false,false,2023-09-14 23:16:07.590
+dbo,tblSquawk,IsGroundable,ix_tblSquawk_CompanyId_AircraftId_IsGroundable,false,false,2025-10-21 09:51:40.597
+dbo,tblSquawk,SubmittedAtUtc,IDX_tblSquawk_SubmittedAtUtc,false,false,2024-12-05 17:53:46.390
+dbo,tblStaffPilotLocationJoiner,CompanyId,IX_tblStaffPilotLocationJoiner,false,false,
+dbo,tblStaffPilotLocationJoiner,Counter,PK_tblStaffPilotLocationJoiner,false,false,
+dbo,tblStaffPilotLocationJoiner,LocationId,IX_tblStaffPilotLocationJoiner,false,false,
+dbo,tblStaffPilotLocationJoiner,UserGUIDid,IX_tblStaffPilotLocationJoiner,false,false,
+dbo,tblStaffPilots,Counter,PK_tblStaffPilots,false,false,
+dbo,tblStandardFlightRecord,_RowId,CX_tblStandardFlightRecord,false,false,
+dbo,tblStandardFlightRecord,FlightRecordId,PK_tblStandardFlightRecord,false,false,2023-08-30 23:19:52.423
+dbo,tblStandardFlightRecord,OperatorId,_WA_Sys_0000000F_64CCF2AE,true,false,2025-10-21 09:52:42.880
+dbo,tblStates,Abbreviation,PK_tblStates,false,false,
+dbo,tblTimeZones,Id,PK_tblTimeZones,false,false,
+dbo,tblUKCounties,Abbreviation,PK_tblUKCounties,false,false,
+dbo,tblUserPermissionJoiner,CompanyId,PK_tblUserPermissionJoiner,false,false,2023-08-30 23:19:45.027
+dbo,tblUserPermissionJoiner,CompanyId,IDX_tblUserPermissionJoiner_PermissionIdCompanyId_UserIdPermissionTypeIdAllow,false,false,2023-08-30 23:19:45.040
+dbo,tblUserPermissionJoiner,CompanyId,_WA_Sys_00000004_347EC10E,true,false,2025-10-21 09:51:34.603
+dbo,tblUserPermissionJoiner,PermissionId,IDX_tblUserPermissionJoiner_PermissionIdCompanyId_UserIdPermissionTypeIdAllow,false,false,2023-08-30 23:19:45.040
+dbo,tblUserPermissionJoiner,PermissionId,PK_tblUserPermissionJoiner,false,false,2023-08-30 23:19:45.027
+dbo,tblUserPermissionJoiner,PermissionTypeId,PK_tblUserPermissionJoiner,false,false,2023-08-30 23:19:45.027
+dbo,tblUserPermissionJoiner,PermissionTypeId,_WA_Sys_00000003_347EC10E,true,false,2023-08-30 23:19:45.043
+dbo,tblUserPermissionJoiner,UserId,PK_tblUserPermissionJoiner,false,false,2023-08-30 23:19:45.027
+dbo,tblUserRoleJoiner,OperatorId,_WA_Sys_00000004_52793849,true,false,2025-10-21 09:51:55.460
+dbo,tblUserRoleJoiner,RoleId,PK_tblUserRoleJoiner,false,false,2024-11-05 21:11:03.480
+dbo,tblUserRoleJoiner,RoleId,IDX_tblUserRoleJoiner_RoleId_UserId,false,false,2024-11-05 21:11:03.430
+dbo,tblUserRoleJoiner,UserId,PK_tblUserRoleJoiner,false,false,2024-11-05 21:11:03.480
+dbo,tblUsers,CharSet,CharSet,false,false,2024-12-06 13:47:05.900
+dbo,tblUsers,CodePageId,CodePageId,false,false,2024-12-06 13:47:05.917
+dbo,tblUsers,GlobalUserId,IDX_tblUsers_GlobalUserId_UserId,false,false,2024-12-06 13:47:05.940
+dbo,tblUsers,GUID,IDX_tblUsers_Guid_GlobalUserId,false,false,2024-12-06 13:47:05.873
+dbo,tblUsers,GUID,UX_tblUsers_GUID,false,false,2025-05-29 18:52:27.720
+dbo,tblUsers,OperatorId,_WA_Sys_0000001E_233F2673,true,false,2025-10-21 09:51:58.230
+dbo,tblUsers,PeopleGroupId,IDX_tblUsers_PeopleGroupId_UserIdUserName,false,false,2024-12-06 13:56:47.823
+dbo,tblUsers,UserId,UserId,false,false,2024-12-06 13:47:05.957
+dbo,tblUsers,UserName,PK_tblUsers,false,false,2024-12-06 13:47:06.120
+dbo,tblUserSchedule,CompanyId,_WA_Sys_00000003_231F2AE2,true,false,2025-10-21 09:51:34.607
+dbo,tblUserSchedule,CompanyId,IX_tblUserSchedule,false,false,
+dbo,tblUserSchedule,Counter,PK_tblUserSchedule,false,false,2023-08-30 23:21:20.343
+dbo,tblUserSchedule,DayOfWeek,IX_tblUserSchedule,false,false,
+dbo,tblUserSchedule,ShiftStart,IX_tblUserSchedule,false,false,
+dbo,tblUserSchedule,UserGuidId,IX_tblUserSchedule,false,false,
+dbo,tblUserScheduleAdjustments,AdjustmentId,ix_tblUserScheduleAdjustments_AdjustmentId,false,false,
+dbo,tblUserScheduleAdjustments,CompanyId,IDX_tblUserScheduleAdjustments_UserGuidIdCompanyId_AdjustmentIdRecurringIdTimeOffStartingEnding,false,false,
+dbo,tblUserScheduleAdjustments,CompanyId,_WA_Sys_00000004_4B2D1C3C,true,false,2025-10-21 09:52:13.713
+dbo,tblUserScheduleAdjustments,Counter,PK_tblUserScheduleAdjustments,false,false,2023-08-30 23:21:59.353
+dbo,tblUserScheduleAdjustments,UserGuidId,IDX_tblUserScheduleAdjustments_UserGuidIdCompanyId_AdjustmentIdRecurringIdTimeOffStartingEnding,false,false,
+dbo,tblUserToCompanyJoiner,CompanyId,PK_tblUserToCompanyJoiner,false,false,2025-10-21 09:51:47.543
+dbo,tblUserToCompanyJoiner,CompanyId,CompanyId,false,false,2023-08-30 23:27:46.527
+dbo,tblUserToCompanyJoiner,IsActive,ix_IsActive_IsDeleted,false,false,2023-08-30 23:27:46.547
+dbo,tblUserToCompanyJoiner,IsActive,IDX_tblUserToCompanyJoiner_IsApprovedIsActiveIsDeleted_UserId,false,false,2023-08-30 23:27:46.563
+dbo,tblUserToCompanyJoiner,IsApproved,IDX_tblUserToCompanyJoiner_IsApprovedIsActiveIsDeleted_UserId,false,false,2023-08-30 23:27:46.563
+dbo,tblUserToCompanyJoiner,IsApproved,ix_tblUserToCompanyJoiner_IsApproved_IsDeleted_includes,false,false,2023-08-30 23:27:46.583
+dbo,tblUserToCompanyJoiner,IsDefault,IsDefault,false,false,2023-08-30 23:27:46.600
+dbo,tblUserToCompanyJoiner,IsDeleted,ix_tblUserToCompanyJoiner_IsApproved_IsDeleted_includes,false,false,2023-08-30 23:27:46.583
+dbo,tblUserToCompanyJoiner,IsDeleted,IDX_tblUserToCompanyJoiner_IsApprovedIsActiveIsDeleted_UserId,false,false,2023-08-30 23:27:46.563
+dbo,tblUserToCompanyJoiner,IsDeleted,ix_IsActive_IsDeleted,false,false,2023-08-30 23:27:46.547
+dbo,tblUserToCompanyJoiner,UserId,PK_tblUserToCompanyJoiner,false,false,2025-10-21 09:51:47.543
+dbo,tblUserToCompanyJoiner,UserId,UserId,false,false,2023-08-30 23:27:46.507
+dbo,TimeFields,Id,PK_TimeFields,false,false,
+dbo,TrainingSessionAirports,_RowId,PK_TrainingSessionAirports,false,false,2023-08-30 23:01:47.140
+dbo,TrainingSessionAirports,AirportId,UK_TrainingSessionAirports_TrainingSessionIdAirportIdOrder,false,false,
+dbo,TrainingSessionAirports,OperatorId,_WA_Sys_00000002_7A1D154F,true,false,2025-10-21 12:08:56.620
+dbo,TrainingSessionAirports,Order,UK_TrainingSessionAirports_TrainingSessionIdAirportIdOrder,false,false,
+dbo,TrainingSessionAirports,TrainingSessionId,UK_TrainingSessionAirports_TrainingSessionIdAirportIdOrder,false,false,
+dbo,TrainingSessionCustomTaskGrades,_RowId,PK_TrainingSessionCustomTaskGrades,false,false,2023-09-16 23:01:54.923
+dbo,TrainingSessionCustomTaskGrades,EnrollmentId,nci_wi_TrainingSessionCustomTaskGrades_8099EE548514AE0D77FD5F0FDD09186F,false,false,2025-03-12 21:03:41.600
+dbo,TrainingSessionCustomTaskGrades,LessonId,nci_wi_TrainingSessionCustomTaskGrades_8099EE548514AE0D77FD5F0FDD09186F,false,false,2025-03-12 21:03:41.600
+dbo,TrainingSessionCustomTaskGrades,OperatorId,nci_wi_TrainingSessionCustomTaskGrades_8099EE548514AE0D77FD5F0FDD09186F,false,false,2025-03-12 21:03:41.600
+dbo,TrainingSessionCustomTaskGrades,OperatorId,_WA_Sys_00000002_049AA3C2,true,false,2025-10-21 12:08:52.950
+dbo,TrainingSessionCustomTaskGrades,TaskId,UK_TrainingSessionCustomTaskGrades_TrainingSessionIdTaskId,false,false,
+dbo,TrainingSessionCustomTaskGrades,TrainingSessionId,UK_TrainingSessionCustomTaskGrades_TrainingSessionIdTaskId,false,false,
+dbo,TrainingSessions,_RowId,PK_TrainingSessions,false,false,2025-08-08 14:01:04.477
+dbo,TrainingSessions,AircraftClass,_WA_Sys_00000011_43E1002F,true,false,2025-06-27 14:14:52.283
+dbo,TrainingSessions,AwaitingSignature,nci_wi_TrainingSessions_180A8812528E00E9F75D09BF7650500F,false,false,2025-08-08 14:00:58.100
+dbo,TrainingSessions,CourseId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,CourseId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,CourseId,_WA_Sys_00000003_43E1002F,true,false,2025-03-12 21:03:45.420
+dbo,TrainingSessions,EnrollmentId,_WA_Sys_00000006_43E1002F,true,false,2025-03-12 21:04:17.083
+dbo,TrainingSessions,EnrollmentId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,EnrollmentId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,EnrollmentId,nci_wi_TrainingSessions_180A8812528E00E9F75D09BF7650500F,false,false,2025-08-08 14:00:58.100
+dbo,TrainingSessions,EnrollmentId,nci_wi_TrainingSessions_41B1F19ACAD7D3000E1476C2B7093147,false,false,2025-08-08 14:01:01.850
+dbo,TrainingSessions,EnrollmentId,nci_msft_1_TrainingSessions_80E4436F35BAE52F6D5CCA7EDFD75B78,false,false,2025-06-27 14:14:35.003
+dbo,TrainingSessions,EnrollmentId,nci_wi_TrainingSessions_93CFDB91A60D739764E8598AA3568630,false,false,2025-06-27 14:14:35.223
+dbo,TrainingSessions,InstructorId,nci_wi_TrainingSessions_B454BCEF2B9B18CE802C869FBFC9A0AE,false,false,2025-06-27 14:14:48.137
+dbo,TrainingSessions,InstructorId,_WA_Sys_00000008_43E1002F,true,false,2025-06-27 14:14:48.180
+dbo,TrainingSessions,IsDraft,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_A5CE7DDB2D64C8CF9A9DA43314AEB6DF,false,false,2025-10-04 12:07:46.683
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_420053F31F6E0D51E84CC133A0BFFBB8,false,false,2025-06-27 14:14:48.253
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_B454BCEF2B9B18CE802C869FBFC9A0AE,false,false,2025-06-27 14:14:48.137
+dbo,TrainingSessions,IsDraft,nci_msft_1_TrainingSessions_80E4436F35BAE52F6D5CCA7EDFD75B78,false,false,2025-06-27 14:14:35.003
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_2E26AF973D4B09C14F6EA1E13AFCA86C,false,false,2025-06-27 14:14:35.150
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_93CFDB91A60D739764E8598AA3568630,false,false,2025-06-27 14:14:35.223
+dbo,TrainingSessions,IsDraft,nci_wi_TrainingSessions_41B1F19ACAD7D3000E1476C2B7093147,false,false,2025-08-08 14:01:01.850
+dbo,TrainingSessions,IsDraft,ix_TrainingSessions_OperatorId_IsDraft,false,false,2025-06-27 14:14:49.977
+dbo,TrainingSessions,LessonGradeId,_WA_Sys_0000001C_43E1002F,true,false,2024-12-06 15:13:00.280
+dbo,TrainingSessions,LessonId,_WA_Sys_00000004_43E1002F,true,false,2025-02-05 18:09:50.483
+dbo,TrainingSessions,LessonId,nci_wi_TrainingSessions_180A8812528E00E9F75D09BF7650500F,false,false,2025-08-08 14:00:58.100
+dbo,TrainingSessions,LessonId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,LessonId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,LessonId,nci_wi_TrainingSessions_93CFDB91A60D739764E8598AA3568630,false,false,2025-06-27 14:14:35.223
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_B454BCEF2B9B18CE802C869FBFC9A0AE,false,false,2025-06-27 14:14:48.137
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_420053F31F6E0D51E84CC133A0BFFBB8,false,false,2025-06-27 14:14:48.253
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_93CFDB91A60D739764E8598AA3568630,false,false,2025-06-27 14:14:35.223
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_2E26AF973D4B09C14F6EA1E13AFCA86C,false,false,2025-06-27 14:14:35.150
+dbo,TrainingSessions,OperatorId,nci_msft_1_TrainingSessions_80E4436F35BAE52F6D5CCA7EDFD75B78,false,false,2025-06-27 14:14:35.003
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_41B1F19ACAD7D3000E1476C2B7093147,false,false,2025-08-08 14:01:01.850
+dbo,TrainingSessions,OperatorId,ix_TrainingSessions_OperatorId_ReservationId,false,false,2025-06-27 14:14:52.230
+dbo,TrainingSessions,OperatorId,ix_TrainingSessions_OperatorId_IsDraft,false,false,2025-06-27 14:14:49.977
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,OperatorId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,OperatorId,IX_TrainingSessions_OperatorIdParentTrainingSessionId,false,false,2025-06-27 14:14:31.027
+dbo,TrainingSessions,OperatorId,nci_wi_TrainingSessions_A5CE7DDB2D64C8CF9A9DA43314AEB6DF,false,false,2025-10-04 12:07:46.683
+dbo,TrainingSessions,ParentTrainingSessionId,_WA_Sys_00000025_43E1002F,true,false,2025-06-27 14:14:34.863
+dbo,TrainingSessions,ParentTrainingSessionId,IX_TrainingSessions_OperatorIdParentTrainingSessionId,false,false,2025-06-27 14:14:31.027
+dbo,TrainingSessions,ReservationId,_WA_Sys_00000020_43E1002F,true,false,2025-06-27 14:14:49.920
+dbo,TrainingSessions,ReservationId,ix_TrainingSessions_OperatorId_ReservationId,false,false,2025-06-27 14:14:52.230
+dbo,TrainingSessions,ReservationId,nci_wi_TrainingSessions_420053F31F6E0D51E84CC133A0BFFBB8,false,false,2025-06-27 14:14:48.253
+dbo,TrainingSessions,SessionDate,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,StudentId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessions,StudentId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,StudentId,_WA_Sys_00000005_43E1002F,true,false,2025-06-27 14:14:35.090
+dbo,TrainingSessions,StudentId,nci_msft_1_TrainingSessions_80E4436F35BAE52F6D5CCA7EDFD75B78,false,false,2025-06-27 14:14:35.003
+dbo,TrainingSessions,TrainingSessionId,nci_wi_TrainingSessions_93CFDB91A60D739764E8598AA3568630,false,false,2025-06-27 14:14:35.223
+dbo,TrainingSessions,TrainingSessionId,UK_TrainingSessions_TrainingSessionId,false,false,2025-06-27 14:14:34.937
+dbo,TrainingSessions,TrainingSessionId,IDX_TrainingSessions_IsDraft_OperatorId_CourseId_EnrollmentId_LessonId_StudentId_TrainingSessionId,false,false,2025-08-08 14:01:03.227
+dbo,TrainingSessions,TrainingSessionId,nci_wi_TrainingSessions_6A7F9B792B0BE0E91266FE5E33307F21,false,false,2025-08-08 14:00:52.600
+dbo,TrainingSessionStudents,_RowId,PK_TrainingSessionStudents,false,false,2023-08-30 23:01:37.107
+dbo,TrainingSessionStudents,OperatorId,IX_TrainingSessionStudents_OperatorIdTrainingSessionId,false,false,2025-10-21 12:09:23.060
+dbo,TrainingSessionStudents,TrainingSessionId,IX_TrainingSessionStudents_OperatorIdTrainingSessionId,false,false,2025-10-21 12:09:23.060
+dbo,TrainingSessionTaskGrades,_RowId,PK_TrainingSessionTaskGrades,false,false,2023-08-30 23:01:47.803
+dbo,TrainingSessionTaskGrades,CourseId,nci_wi_TrainingSessionTaskGrades_E00656627CAC26D9AF91D09B735AFAC7,false,false,
+dbo,TrainingSessionTaskGrades,CourseId,nci_wi_TrainingSessionTaskGrades_F66187BBC6F1891C5CF136017EB09735,false,false,2025-03-12 21:13:06.083
+dbo,TrainingSessionTaskGrades,EnrollmentId,nci_wi_TrainingSessionTaskGrades_F66187BBC6F1891C5CF136017EB09735,false,false,2025-03-12 21:13:06.083
+dbo,TrainingSessionTaskGrades,EnrollmentId,ix_TrainingSessionTaskGrades_OperatorId_LessonId_EnrollmentId,false,false,2025-10-21 12:09:52.067
+dbo,TrainingSessionTaskGrades,EnrollmentId,IDX_TrainingSessionTaskGrades_OperatorIdEnrollmentId,false,false,2025-03-12 09:10:46.883
+dbo,TrainingSessionTaskGrades,EnrollmentId,nci_wi_TrainingSessionTaskGrades_E00656627CAC26D9AF91D09B735AFAC7,false,false,
+dbo,TrainingSessionTaskGrades,LessonId,nci_wi_TrainingSessionTaskGrades_E00656627CAC26D9AF91D09B735AFAC7,false,false,
+dbo,TrainingSessionTaskGrades,LessonId,ix_TrainingSessionTaskGrades_OperatorId_LessonId_EnrollmentId,false,false,2025-10-21 12:09:52.067
+dbo,TrainingSessionTaskGrades,OperatorId,ix_TrainingSessionTaskGrades_OperatorId_LessonId_EnrollmentId,false,false,2025-10-21 12:09:52.067
+dbo,TrainingSessionTaskGrades,OperatorId,IDX_TrainingSessionTaskGrades_OperatorIdEnrollmentId,false,false,2025-03-12 09:10:46.883
+dbo,TrainingSessionTaskGrades,OperatorId,nci_wi_TrainingSessionTaskGrades_F66187BBC6F1891C5CF136017EB09735,false,false,2025-03-12 21:13:06.083
+dbo,TrainingSessionTaskGrades,OperatorId,nci_wi_TrainingSessionTaskGrades_E00656627CAC26D9AF91D09B735AFAC7,false,false,
+dbo,TrainingSessionTaskGrades,TaskId,UK_TrainingSessionTaskGrades_TrainingSessionIdTaskId,false,false,
+dbo,TrainingSessionTaskGrades,TrainingSessionId,nci_wi_TrainingSessionTaskGrades_F66187BBC6F1891C5CF136017EB09735,false,false,2025-03-12 21:13:06.083
+dbo,TrainingSessionTaskGrades,TrainingSessionId,UK_TrainingSessionTaskGrades_TrainingSessionIdTaskId,false,false,
+dbo,TrainingSessionTaskGrades,TrainingSessionId,nci_wi_TrainingSessionTaskGrades_E00656627CAC26D9AF91D09B735AFAC7,false,false,
+dbo,TrainingSessionTimes,_RowId,PK_TrainingSessionTimes,false,false,2024-12-06 14:08:25.013
+dbo,TrainingSessionTimes,CourseId,nci_wi_TrainingSessionTimes_36553F02B09EC8D5691A3BA49749EC96,false,false,2025-03-12 21:20:07.860
+dbo,TrainingSessionTimes,CourseId,ix_TrainingSessionTimes_OperatorId_CourseId_EnrollmentId,false,false,2025-10-21 12:09:45.150
+dbo,TrainingSessionTimes,CourseId,nci_wi_TrainingSessionTimes_86A05E81946FFBB72459D76498270CD4,false,false,2025-03-12 21:20:56.703
+dbo,TrainingSessionTimes,EnrollmentId,nci_wi_TrainingSessionTimes_86A05E81946FFBB72459D76498270CD4,false,false,2025-03-12 21:20:56.703
+dbo,TrainingSessionTimes,EnrollmentId,_WA_Sys_00000006_3EC74557,true,false,2024-12-06 14:08:22.190
+dbo,TrainingSessionTimes,EnrollmentId,ix_TrainingSessionTimes_OperatorId_CourseId_EnrollmentId,false,false,2025-10-21 12:09:45.150
+dbo,TrainingSessionTimes,EnrollmentId,nci_wi_TrainingSessionTimes_321D4F3EC7E957EC42BF6BC0618084CA,false,false,2025-03-12 21:21:45.133
+dbo,TrainingSessionTimes,EnrollmentId,nci_wi_TrainingSessionTimes_36553F02B09EC8D5691A3BA49749EC96,false,false,2025-03-12 21:20:07.860
+dbo,TrainingSessionTimes,FieldId,UK_TrainingSessionTimes_TrainingSessionIdFieldId,false,false,2024-12-06 14:08:13.247
+dbo,TrainingSessionTimes,FieldId,_WA_Sys_00000008_3EC74557,true,false,2024-12-06 14:08:25.103
+dbo,TrainingSessionTimes,IsDraft,_WA_Sys_0000000A_3EC74557,true,false,2024-12-06 14:08:22.263
+dbo,TrainingSessionTimes,IsDraft,nci_wi_TrainingSessionTimes_321D4F3EC7E957EC42BF6BC0618084CA,false,false,2025-03-12 21:21:45.133
+dbo,TrainingSessionTimes,IsDraft,nci_wi_TrainingSessionTimes_36553F02B09EC8D5691A3BA49749EC96,false,false,2025-03-12 21:20:07.860
+dbo,TrainingSessionTimes,LessonId,nci_wi_TrainingSessionTimes_36553F02B09EC8D5691A3BA49749EC96,false,false,2025-03-12 21:20:07.860
+dbo,TrainingSessionTimes,LessonId,_WA_Sys_00000004_3EC74557,true,false,2024-12-06 14:08:22.323
+dbo,TrainingSessionTimes,OperatorId,nci_wi_TrainingSessionTimes_86A05E81946FFBB72459D76498270CD4,false,false,2025-03-12 21:20:56.703
+dbo,TrainingSessionTimes,OperatorId,ix_TrainingSessionTimes_OperatorId_CourseId_EnrollmentId,false,false,2025-10-21 12:09:45.150
+dbo,TrainingSessionTimes,OperatorId,nci_wi_TrainingSessionTimes_35C9358E0FA917781608CA1038C23443,false,false,2025-03-12 21:22:37.523
+dbo,TrainingSessionTimes,OperatorId,nci_wi_TrainingSessionTimes_321D4F3EC7E957EC42BF6BC0618084CA,false,false,2025-03-12 21:21:45.133
+dbo,TrainingSessionTimes,OperatorId,_WA_Sys_00000002_3EC74557,true,false,2025-03-12 09:12:19.897
+dbo,TrainingSessionTimes,OperatorId,nci_wi_TrainingSessionTimes_36553F02B09EC8D5691A3BA49749EC96,false,false,2025-03-12 21:20:07.860
+dbo,TrainingSessionTimes,TrainingSessionId,UK_TrainingSessionTimes_TrainingSessionIdFieldId,false,false,2024-12-06 14:08:13.247
+dbo,TrainingSessionTimes,TrainingSessionId,nci_wi_TrainingSessionTimes_35C9358E0FA917781608CA1038C23443,false,false,2025-03-12 21:22:37.523
+dbo,TSASecurityAwarenessTrainings,_RowId,PK_TSASecurityAwarenessTraining,false,false,2023-08-30 23:22:02.237
+dbo,TSASecurityAwarenessTrainings,OperatorId,_WA_Sys_00000003_29971E47,true,false,2025-10-21 09:56:56.897
+dbo,TSASecurityAwarenessTrainings,TSASecurityAwarenessTrainingId,UK_TSASecurityAwarenessTraining_TSASecurityAwarenessTrainingId,false,false,
+dbo,TSASecurityAwarenessTrainingsHistory,_RowId,PK_TSASecurityAwarenessTrainingHistory,false,false,2023-09-01 23:28:30.857
+dbo,TSASecurityAwarenessTrainingsHistory,OperatorId,_WA_Sys_00000006_60E75331,true,false,2025-10-21 09:55:23.537

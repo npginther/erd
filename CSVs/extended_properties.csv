@@ -1,0 +1,3 @@
+SchemaName,ObjectName,ObjectType,ColumnName,PropertyName,PropertyValue
+dbo,tblAircraftTypeCheckOuts,USER_TABLE,Id,MS_Description,""
+dbo,tblRemovedReservation,USER_TABLE,DeletedAt,MS_Description,The Date and Time the reservation was deleted.
