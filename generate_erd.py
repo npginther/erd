@@ -163,6 +163,78 @@ def generate_mermaid_erd(tables, relationships, schema_filter=None):
     
     return '\n'.join(mermaid)
 
+def generate_mermaid_flowchart(tables, relationships, schema_filter=None):
+    """Generate Mermaid flowchart with top-down orientation"""
+    
+    # Filter by schema if specified
+    if schema_filter:
+        filtered_relationships = [r for r in relationships 
+                                 if r['from_schema'] == schema_filter or r['to_schema'] == schema_filter]
+        
+        # Get unique tables involved
+        table_names = set()
+        for r in filtered_relationships:
+            table_names.add(f"{r['from_schema']}.{r['from_table']}")
+            table_names.add(f"{r['to_schema']}.{r['to_table']}")
+        
+        filtered_tables = {k: v for k, v in tables.items() if k in table_names}
+    else:
+        filtered_relationships = relationships
+        filtered_tables = tables
+    
+    print(f"\nGenerating Mermaid Flowchart (Top-Down)...")
+    print(f"   - {len(filtered_tables)} tables")
+    print(f"   - {len(filtered_relationships)} relationships")
+    
+    mermaid = ["flowchart TD"]
+    
+    # Add table definitions as nodes
+    for table_full_name, table_info in sorted(filtered_tables.items()):
+        schema, table = table_full_name.split('.')
+        
+        # Create styled node with primary keys
+        if table_info['primary_keys']:
+            pk_list = ', '.join(table_info['primary_keys'])
+            mermaid.append(f"    {table}[\"<b>{table}</b><br/>PK: {pk_list}\"]")
+        else:
+            mermaid.append(f"    {table}[\"<b>{table}</b>\"]")
+    
+    # Add styling
+    mermaid.append("")
+    mermaid.append("    classDef parentTable fill:#4CAF50,stroke:#2E7D32,color:#fff")
+    mermaid.append("    classDef childTable fill:#2196F3,stroke:#1565C0,color:#fff")
+    mermaid.append("")
+    
+    # Track parent tables
+    parent_tables = set()
+    child_tables = set()
+    
+    for rel in filtered_relationships:
+        parent_tables.add(rel['to_table'])
+        child_tables.add(rel['from_table'])
+    
+    # Add relationships
+    for rel in filtered_relationships:
+        from_table = rel['from_table']
+        to_table = rel['to_table']
+        label = f"{rel['from_column']}"
+        
+        # Determine arrow style based on delete rule
+        if rel['delete_rule'] == 'CASCADE':
+            # Solid arrow for cascade
+            mermaid.append(f"    {to_table} -->|{label}| {from_table}")
+        else:
+            # Dashed arrow for NO ACTION
+            mermaid.append(f"    {to_table} -.->|{label}| {from_table}")
+    
+    # Apply styling to parent tables
+    mermaid.append("")
+    for table in parent_tables:
+        if table not in child_tables:  # Only parents, not children
+            mermaid.append(f"    class {table} parentTable")
+    
+    return '\n'.join(mermaid)
+
 def main():
     """Main execution"""
     print("=" * 60)
@@ -189,11 +261,21 @@ def main():
         f.write(mermaid_full)
     print(f"\n[OK] Saved to: erd_full.mmd")
     
-    # Generate schema-specific ERDs
+    # Generate full flowchart (vertical)
+    print("\n" + "=" * 60)
+    print("Full Flowchart - Vertical Layout (All Schemas)")
+    print("=" * 60)
+    flowchart_full = generate_mermaid_flowchart(tables, relationships)
+    
+    with open('erd_full_vertical.mmd', 'w', encoding='utf-8') as f:
+        f.write(flowchart_full)
+    print(f"\n[OK] Saved to: erd_full_vertical.mmd")
+    
+    # Generate schema-specific ERDs and flowcharts
     for schema in sorted(schemas):
         if schema in ['dbo', 'mx', 'inv']:  # Focus on main schemas
             print("\n" + "=" * 60)
-            print(f"{schema.upper()} Schema ERD")
+            print(f"{schema.upper()} Schema ERD (Horizontal)")
             print("=" * 60)
             mermaid_schema = generate_mermaid_erd(tables, relationships, schema)
             
@@ -201,6 +283,15 @@ def main():
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(mermaid_schema)
             print(f"\n[OK] Saved to: {filename}")
+            
+            # Also generate vertical version
+            print(f"\n{schema.upper()} Schema Flowchart (Vertical)")
+            flowchart_schema = generate_mermaid_flowchart(tables, relationships, schema)
+            
+            filename_vertical = f'erd_{schema}_vertical.mmd'
+            with open(filename_vertical, 'w', encoding='utf-8') as f:
+                f.write(flowchart_schema)
+            print(f"[OK] Saved to: {filename_vertical}")
     
     print("\n" + "=" * 60)
     print("ERD Generation Complete!")
@@ -210,6 +301,9 @@ def main():
     print("  2. Paste into https://mermaid.live")
     print("  3. Use in Markdown with ```mermaid code blocks")
     print("  4. GitHub will render .mmd files automatically")
+    print("\nFiles generated:")
+    print("  - erd_*.mmd = Horizontal ERD layout (traditional)")
+    print("  - erd_*_vertical.mmd = Vertical flowchart layout (top-down)")
 
 if __name__ == '__main__':
     main()

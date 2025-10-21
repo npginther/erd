@@ -1,0 +1,119 @@
+flowchart TD
+    FlightAlerts["<b>FlightAlerts</b>"]
+    GlobalUserSettings["<b>GlobalUserSettings</b>"]
+    LabelCategories["<b>LabelCategories</b>"]
+    LabelToRoleJoiner["<b>LabelToRoleJoiner</b>"]
+    LabelToUserJoiner["<b>LabelToUserJoiner</b>"]
+    Labels["<b>Labels</b>"]
+    LocationToIcaoLocationsJoiner["<b>LocationToIcaoLocationsJoiner</b>"]
+    LogTenUserOperatorJoiner["<b>LogTenUserOperatorJoiner</b>"]
+    ReservationBatchReservations["<b>ReservationBatchReservations</b>"]
+    ReservationBatches["<b>ReservationBatches</b>"]
+    ReservationTrainingSessions["<b>ReservationTrainingSessions</b>"]
+    ReservationTypeToPreflightAuthorizingUsersJoiner["<b>ReservationTypeToPreflightAuthorizingUsersJoiner</b>"]
+    ScheduleMatchUserPreferences["<b>ScheduleMatchUserPreferences</b>"]
+    ScheduleMatchUserPreferencesToAircraftJoiner["<b>ScheduleMatchUserPreferencesToAircraftJoiner</b>"]
+    ScheduleMatchUserPreferencesToFlightInstructorJoiner["<b>ScheduleMatchUserPreferencesToFlightInstructorJoiner</b>"]
+    ScheduleMatchUserPreferencesToSchedulingGroupsJoiner["<b>ScheduleMatchUserPreferencesToSchedulingGroupsJoiner</b>"]
+    tblAddress["<b>tblAddress</b>"]
+    tblAddressParts["<b>tblAddressParts</b>"]
+    tblAircraft["<b>tblAircraft</b>"]
+    tblCompanyAddressJoiner["<b>tblCompanyAddressJoiner</b>"]
+    tblCompanyGalleries["<b>tblCompanyGalleries</b>"]
+    tblCompanyGalleryImages["<b>tblCompanyGalleryImages</b>"]
+    tblCompanyPlugInModuleJoiner["<b>tblCompanyPlugInModuleJoiner</b>"]
+    tblContactNumbers["<b>tblContactNumbers</b>"]
+    tblDispatchPilots["<b>tblDispatchPilots</b>"]
+    tblDispatchRecords["<b>tblDispatchRecords</b>"]
+    tblDispatchResources["<b>tblDispatchResources</b>"]
+    tblEngine["<b>tblEngine</b>"]
+    tblEnginePropellerJoiner["<b>tblEnginePropellerJoiner</b>"]
+    tblFlightInstructor["<b>tblFlightInstructor</b>"]
+    tblFlightRecord["<b>tblFlightRecord</b>"]
+    tblFlightRecordResources["<b>tblFlightRecordResources</b>"]
+    tblLocationToCompanyJoiner["<b>tblLocationToCompanyJoiner</b>"]
+    tblLocationToPersonJoiner["<b>tblLocationToPersonJoiner</b>"]
+    tblLocations["<b>tblLocations</b>"]
+    tblMeterRecords["<b>tblMeterRecords</b>"]
+    tblPersonAddressJoiner["<b>tblPersonAddressJoiner</b>"]
+    tblPersonToContactNumberJoiner["<b>tblPersonToContactNumberJoiner</b>"]
+    tblPlugInModule["<b>tblPlugInModule</b>"]
+    tblPostItemRoleIds["<b>tblPostItemRoleIds</b>"]
+    tblPostItems["<b>tblPostItems</b>"]
+    tblRemovedReservation["<b>tblRemovedReservation</b>"]
+    tblRemovedReservationFlightDetails["<b>tblRemovedReservationFlightDetails</b>"]
+    tblRemovedReservationPilots["<b>tblRemovedReservationPilots</b>"]
+    tblRemovedReservationResources["<b>tblRemovedReservationResources</b>"]
+    tblReservation["<b>tblReservation</b>"]
+    tblReservationFlightDetails["<b>tblReservationFlightDetails</b>"]
+    tblReservationNotifications["<b>tblReservationNotifications</b>"]
+    tblReservationPilots["<b>tblReservationPilots</b>"]
+    tblReservationResources["<b>tblReservationResources</b>"]
+    tblReservationTypes["<b>tblReservationTypes</b>"]
+    tblRole["<b>tblRole</b>"]
+    tblRolePermissionJoiner["<b>tblRolePermissionJoiner</b>"]
+    tblStandardFlightRecord["<b>tblStandardFlightRecord</b>"]
+    tblUserRoleJoiner["<b>tblUserRoleJoiner</b>"]
+
+    classDef parentTable fill:#4CAF50,stroke:#2E7D32,color:#fff
+    classDef childTable fill:#2196F3,stroke:#1565C0,color:#fff
+
+    tblRole -->|RoleId| tblRolePermissionJoiner
+    tblRole -->|RoleId| tblUserRoleJoiner
+    tblRemovedReservation -->|ReservationId| tblRemovedReservationResources
+    tblRemovedReservation -->|ReservationId| tblRemovedReservationPilots
+    tblRemovedReservation -->|ReservationId| tblRemovedReservationFlightDetails
+    tblAddress -->|AddressId| tblCompanyAddressJoiner
+    tblPlugInModule -.->|PlugInModuleId| tblCompanyPlugInModuleJoiner
+    tblCompanyGalleries -->|GalleryId| tblCompanyGalleryImages
+    tblLocations -->|LocationId| tblLocationToCompanyJoiner
+    tblLocations -->|LocationId| tblLocationToPersonJoiner
+    tblEngine -->|EngineId| tblEnginePropellerJoiner
+    tblContactNumbers -->|ContactNumberId| tblPersonToContactNumberJoiner
+    tblReservation -.->|ReservationId| FlightAlerts
+    ReservationBatches -->|ReservationBatchId| ReservationBatchReservations
+    tblReservationTypes -.->|ReservationTypeId| ReservationTypeToPreflightAuthorizingUsersJoiner
+    tblFlightRecord -->|FlightRecordId| tblFlightRecordResources
+    GlobalUserSettings -.->|UserId| LogTenUserOperatorJoiner
+    tblFlightRecord -->|FlightRecordId| tblMeterRecords
+    tblFlightRecord -->|FlightRecordId| tblStandardFlightRecord
+    ScheduleMatchUserPreferences -.->|PreferenceId| ScheduleMatchUserPreferencesToAircraftJoiner
+    tblReservation -->|ReservationId| tblReservationPilots
+    tblAircraft -.->|AircraftId| ScheduleMatchUserPreferencesToAircraftJoiner
+    tblReservation -->|ReservationId| tblReservationFlightDetails
+    ScheduleMatchUserPreferences -.->|PreferenceId| ScheduleMatchUserPreferencesToFlightInstructorJoiner
+    tblReservation -->|ReservationId| tblReservationResources
+    tblReservation -->|ReservationId| tblReservationNotifications
+    tblFlightInstructor -.->|InstructorId| ScheduleMatchUserPreferencesToFlightInstructorJoiner
+    ScheduleMatchUserPreferences -.->|PreferenceId| ScheduleMatchUserPreferencesToSchedulingGroupsJoiner
+    tblDispatchRecords -->|DispatchId| tblDispatchPilots
+    tblDispatchRecords -->|DispatchId| tblDispatchResources
+    Labels -->|LabelId| LabelToRoleJoiner
+    tblPostItems -->|PostItemId| tblPostItemRoleIds
+    tblRole -->|RoleId| LabelToRoleJoiner
+    Labels -->|LabelId| LabelToUserJoiner
+    LabelCategories -->|LabelCategoryId| Labels
+    tblReservation -->|ReservationId| ReservationTrainingSessions
+    tblLocations -->|LocationId| LocationToIcaoLocationsJoiner
+    tblAddress -->|AddressId| tblAddressParts
+    tblAddress -->|AddressId| tblPersonAddressJoiner
+
+    class tblRemovedReservation parentTable
+    class ScheduleMatchUserPreferences parentTable
+    class tblContactNumbers parentTable
+    class tblRole parentTable
+    class tblAddress parentTable
+    class tblAircraft parentTable
+    class tblReservation parentTable
+    class tblFlightRecord parentTable
+    class tblPostItems parentTable
+    class tblPlugInModule parentTable
+    class LabelCategories parentTable
+    class tblLocations parentTable
+    class tblCompanyGalleries parentTable
+    class tblFlightInstructor parentTable
+    class tblEngine parentTable
+    class GlobalUserSettings parentTable
+    class tblDispatchRecords parentTable
+    class tblReservationTypes parentTable
+    class ReservationBatches parentTable
